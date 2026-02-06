@@ -82,7 +82,7 @@ html {
 
 /* Hero gradient background */
 .hero-gradient {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2000');
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('/images/puto_karsava_futbola_turnirs_cezara_kauss_2024_uzvaretaji.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

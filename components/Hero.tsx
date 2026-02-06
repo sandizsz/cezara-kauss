@@ -9,7 +9,7 @@ export default function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date("2026-07-26T10:00:00").getTime();
+    const targetDate = new Date("2026-07-20T10:00:00").getTime();
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = targetDate - now;
@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-6xl px-4 md:px-6 text-center text-white">
         <div className="animate-reveal" style={{ animationDelay: "0.1s" }}>
 
-          <span className="section-label mb-4 md:mb-8 bg-white/10 text-cesar-gold backdrop-blur-sm px-4 md:px-8 text-[10px] md:text-xs">
+          <span className="section-label mb-4 md:mb-8 bg-transparent text-cesar-gold px-4 md:px-8 text-[10px] md:text-xs">
             ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS
           </span>
 
@@ -62,7 +62,7 @@ export default function Hero() {
               href="/#galerija"
               className="w-full md:w-auto bg-black/50 backdrop-blur-md border-2 border-cesar-gold text-cesar-gold font-extrabold text-xs md:text-sm px-8 md:px-16 py-4 md:py-6 uppercase tracking-[0.2em] hover:bg-cesar-gold hover:text-black transition-all text-center"
             >
-              SKATĪT GALERIJU
+              Skatīt Turnīra arhīvu
             </Link>
           </div>
         </div>
