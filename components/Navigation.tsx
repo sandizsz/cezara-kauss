@@ -4,10 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/#par-turniru", label: "SĀKUMS" },
-  { href: "/#galerija", label: "GALERIJA" },
-  { href: "/#video", label: "VIDEO" },
-  { href: "/#atbalstitaji", label: "Atbalstītāji" },
+  { href: "/", label: "SĀKUMS" },
+  { href: "/#par-turniru", label: "Par turnīru" }
 ];
 
 const LOGO_URL = "/images/CezaraKauss-2025-1536x1536.webp";
@@ -50,8 +48,12 @@ export default function Navigation() {
           <div className="h-8 w-px bg-zinc-100 mx-4"></div>
           <Link
             href="/registret-komandu"
-            className="bg-black text-cesar-gold font-extrabold text-[11px] px-8 py-3 uppercase hover:bg-zinc-800 transition-all tracking-widest rounded-sm border-b-2 border-cesar-gold shadow-lg"
+            className="flex items-center gap-2.5 bg-black text-cesar-gold font-extrabold text-[11px] px-8 py-3 uppercase hover:bg-zinc-800 transition-all tracking-widest rounded-sm border-b-2 border-cesar-gold shadow-lg"
           >
+            <span className="relative flex h-2.5 w-2.5 shrink-0">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
+            </span>
             Reģistrēt komandu turnīram
           </Link>
         </div>
@@ -84,8 +86,12 @@ export default function Navigation() {
           <Link
             href="/registret-komandu"
             onClick={() => setIsOpen(false)}
-            className="w-full py-5 bg-black text-cesar-gold font-display text-3xl uppercase rounded-sm border-b-4 border-cesar-gold text-center"
+            className="flex items-center justify-center gap-3 w-full py-5 bg-black text-cesar-gold font-display text-3xl uppercase rounded-sm border-b-4 border-cesar-gold"
           >
+            <span className="relative flex h-3 w-3 shrink-0">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
+            </span>
             REĢISTRĒT KOMANDU
           </Link>
         </div>

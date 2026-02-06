@@ -5,7 +5,7 @@ export default function PrizePool() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12 md:mb-16">
           <span className="section-label mb-3 md:mb-6 !bg-cesar-gold !text-black">Apbalvojumi</span>
-          <h2 className="font-display text-6xl sm:text-7xl md:text-[10rem] uppercase tracking-normal text-white" style={{ lineHeight: '0.9' }}>
+          <h2 className="font-display text-7xl sm:text-8xl uppercase tracking-normal text-white" style={{ lineHeight: '0.9' }}>
             BALVU <span className="gold-text-gradient">FONDS</span>
           </h2>
         </div>
