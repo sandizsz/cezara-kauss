@@ -122,16 +122,3 @@ html {
   font-family: var(--font-display);
 }
 
-/* Sponsors scroll animation */
-@keyframes sponsors-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.33%);
-  }
-}
-
-.sponsors-scroll {
-  animation: sponsors-scroll 30s linear infinite;
-}

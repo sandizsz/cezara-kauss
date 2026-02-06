@@ -16,7 +16,7 @@ export default function About() {
               TURNĪRA <br/><span className="gold-text-gradient">INFORMĀCIJA</span>
             </h2>
           </div>
-          <p className="max-w-md text-zinc-500 text-xs md:text-sm font-medium leading-relaxed italic">
+          <p className="max-w-md text-zinc-500 text-xs md:text-sm font-medium leading-relaxed">
             Oficiālais nolikums paredz 5 pret 5 spēlētāju formātu uz saīsinātā laukuma, garantējot augstu intensitāti un vārtu gūšanas momentus.
           </p>
         </div>

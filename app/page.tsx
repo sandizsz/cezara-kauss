@@ -22,13 +22,13 @@ export default function Home() {
         <Hero />
         <About />
         <PrizePool />
+        <VideoSection />
         <TournamentTimeline />
         <MemorialLegacy />
         <HallOfFame />
         <LocationMap />
         <MatchDayExperience />
         <PhotoCarousel />
-        <VideoSection />
         <Sponsors />
       </main>
       <Footer />

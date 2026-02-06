@@ -9,7 +9,13 @@
       "Bash(npm run build:*)",
       "Bash(npm run dev:*)",
       "Bash(timeout:*)",
-      "Bash(del:*)"
+      "Bash(del:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd /c \"taskkill /PID 8012 /F\")",
+      "Bash(cmd /c \"taskkill /F /T /PID 8012\")",
+      "Bash(node:*)"
     ]
   }
 }
