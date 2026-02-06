@@ -1,0 +1,21 @@
+import Navigation from "@/components/Navigation";
+import RegistrationForm from "@/components/RegistrationForm";
+import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reģistrēt Komandu | Cēzara Kauss 2026",
+  description: "Piesakiet savu komandu Cēzara Kauss 2026 futbola turnīram. Dalības maksa €100. Formāts 5 vs 5.",
+};
+
+export default function RegistretKomandu() {
+  return (
+    <>
+      <Navigation />
+      <main className="animate-fade-in pt-24">
+        <RegistrationForm />
+      </main>
+      <Footer />
+    </>
+  );
+}
