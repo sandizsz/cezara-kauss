@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/icons/trophy.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CĒZARA KAUSS // Oficiālais Portāls</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Bebas Neue', 'cursive'],
+            },
+            colors: {
+              'cesar-gold': '#D4AF37',
+              'cesar-gold-dark': '#996515',
+              'cesar-gold-light': '#F5E6BE',
+              'pitch-dark': '#000000',
+              'stadium-gray': '#f8f8f8',
+            },
+            animation: {
+              'reveal': 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'fade-in': 'fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              reveal: {
+                '0%': { transform: 'translateY(30px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      .hero-gradient {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2000');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .card-shadow {
+        box-shadow: 0 10px 40px -15px rgba(0,0,0,0.1);
+      }
+
+      .section-label {
+        letter-spacing: 0.3em;
+        font-weight: 800;
+        font-size: 0.75rem;
+        color: #D4AF37;
+        background: #000;
+        padding: 6px 16px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .gold-text-gradient {
+        background: linear-gradient(to bottom, #D4AF37, #996515);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .laurel-frame-gold {
+        border: 4px solid transparent;
+        border-image: linear-gradient(to bottom, #D4AF37, #996515) 1;
+      }
+
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: #000; }
+      
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
