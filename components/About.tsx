@@ -1,7 +1,7 @@
 export default function About() {
   const cards = [
     { icon: "📅", title: "DATUMS", detail: "26. JŪLIJS", sub: "2026. GADS" },
-    { icon: "📍", title: "VIETA", detail: "GULBENE", sub: "O. KALPAKA IELA 1A" },
+    { icon: "📍", title: "VIETA", detail: "GULBENES Pilsētas Stadions", sub: "O. KALPAKA IELA 1A" },
     { icon: "👥", title: "KOMANDAS", detail: "5 VS 5", sub: "MAX 24 SQUADI" },
     { icon: "🏆", title: "BALVAS", detail: "€1,000.00", sub: "BALVU FONDS" },
   ];
@@ -11,7 +11,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-4">
           <div>
-            <span className="section-label mb-2 md:mb-4">SPECIFIKĀCIJA</span>
+            <span className="section-label mb-4 md:mb-4">Par futbola turnīru</span>
             <h2 className="font-display text-7xl sm:text-8xl md:text-[10rem] uppercase tracking-normal text-black" style={{ lineHeight: '0.9' }}>
               TURNĪRA <br/><span className="gold-text-gradient">INFORMĀCIJA</span>
             </h2>

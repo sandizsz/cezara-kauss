@@ -64,6 +64,16 @@ html {
   text-transform: uppercase;
 }
 
+.hero-label {
+  letter-spacing: 0.3em;
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: #D4AF37;
+  padding: 6px 16px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
 /* Gold text gradient */
 .gold-text-gradient {
   background: linear-gradient(to bottom, #D4AF37 0%, #996515 100%);

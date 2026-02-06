@@ -17,7 +17,7 @@ export default function VideoSection() {
           <div className="relative aspect-video bg-zinc-900 border-2 md:border-4 border-white overflow-hidden shadow-2xl">
             <iframe
               className="w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=1&loop=1"
+              src="https://www.youtube.com/embed/30YlLGeUReY?si=hkP-FO2NAdNxxGT0?autoplay=0&mute=1&controls=1&loop=1"
               title="Cēzara Kauss Highlights"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

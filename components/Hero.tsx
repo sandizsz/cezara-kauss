@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-6xl px-4 md:px-6 text-center text-white">
         <div className="animate-reveal" style={{ animationDelay: "0.1s" }}>
 
-          <span className="section-label mb-4 md:mb-8 bg-transparent text-cesar-gold px-4 md:px-8 text-[10px] md:text-xs">
+          <span className="hero-label mb-4 md:mb-8 bg-transparent text-cesar-gold px-4 md:px-8 text-[10px] md:text-xs">
             ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS
           </span>
 

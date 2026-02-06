@@ -52,7 +52,7 @@ export default function Navigation() {
             href="/registret-komandu"
             className="bg-black text-cesar-gold font-extrabold text-[11px] px-8 py-3 uppercase hover:bg-zinc-800 transition-all tracking-widest rounded-sm border-b-2 border-cesar-gold shadow-lg"
           >
-            PIETEIKTIES
+            Reģistrēt komandu turnīram
           </Link>
         </div>
 
