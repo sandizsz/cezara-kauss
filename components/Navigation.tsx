@@ -7,7 +7,7 @@ const navLinks = [
   { href: "/#par-turniru", label: "SĀKUMS" },
   { href: "/#galerija", label: "GALERIJA" },
   { href: "/#video", label: "VIDEO" },
-  { href: "/#sponsori", label: "SPONSORI" },
+  { href: "/#atbalstitaji", label: "Atbalstītāji" },
 ];
 
 const LOGO_URL = "/images/CezaraKauss-2025-1536x1536.webp";
@@ -20,7 +20,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
 
         <Link href="/" className="flex items-center gap-4 group">
-          <div className="relative w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+          <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
             <img
               src={LOGO_URL}
               alt="Cēzara Kauss Logo"

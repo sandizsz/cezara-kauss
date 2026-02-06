@@ -3,7 +3,7 @@ export default function VideoSection() {
     <section id="video" className="py-16 md:py-24 bg-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-8 md:mb-16">
-          <span className="section-label mb-3 md:mb-6">ATMOSFĒRA</span>
+   
           <h2 className="font-display text-6xl sm:text-7xl md:text-[10rem] uppercase tracking-normal text-white" style={{ lineHeight: '0.9' }}>
             SKATIES <span className="gold-text-gradient">LEGATU</span>
           </h2>

@@ -40,7 +40,7 @@ export default function Hero() {
 
           <h1 className="text-7xl sm:text-8xl md:text-[10rem] lg:text-[12rem] font-display font-bold uppercase tracking-normal mb-4 md:mb-6" style={{ lineHeight: '0.9' }}>
             CĒZARA
-             <span className="gold-text-gradient">KAUSS</span>
+             <span className="gold-text-gradient ml-[10px]"> KAUSS</span>
           </h1>
 
           <p className="max-w-xl mx-auto text-zinc-300 text-base md:text-2xl mb-8 md:mb-12 font-medium  tracking-tight px-2">
