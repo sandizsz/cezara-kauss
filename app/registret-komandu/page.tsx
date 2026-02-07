@@ -12,7 +12,7 @@ export default function RegistretKomandu() {
   return (
     <>
       <Navigation />
-      <main className="animate-fade-in pt-24">
+      <main className="animate-fade-in">
         <RegistrationForm />
       </main>
       <Footer />

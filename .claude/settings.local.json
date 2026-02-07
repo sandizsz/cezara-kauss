@@ -15,7 +15,12 @@
       "Bash(taskkill:*)",
       "Bash(cmd /c \"taskkill /PID 8012 /F\")",
       "Bash(cmd /c \"taskkill /F /T /PID 8012\")",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(lsof:*)",
+      "Bash(curl:*)",
+      "Bash(python3:*)"
     ]
   }
 }

@@ -8,7 +8,7 @@ export default function VestureHero() {
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-30"
         style={{ backgroundImage: "url('/images/puto_karsava_futbola_turnirs_cezara_kauss_2024_uzvaretaji.webp')" }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black" />
 
       <div className="relative z-10 w-full max-w-6xl px-4 md:px-6 text-center text-white">
         <div className="animate-reveal" style={{ animationDelay: "0.1s" }}>

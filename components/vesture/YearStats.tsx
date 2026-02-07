@@ -12,7 +12,7 @@ export default function YearStats({ stats }: YearStatsProps) {
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="bg-zinc-900 border-b-4 border-cesar-gold p-4 md:p-6 text-center"
+            className="bg-zinc-900 border-b-4 border-cesar-gold p-4 md:p-6 text-center flex flex-col items-center justify-center min-h-[96px] md:min-h-[120px]"
           >
             <span className="block font-display text-3xl md:text-5xl text-white">{stat.value}</span>
             <span className="text-[8px] md:text-[10px] text-cesar-gold font-extrabold tracking-[0.2em] uppercase mt-1 block">

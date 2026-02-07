@@ -7,14 +7,15 @@ import PhotoGallery from "./PhotoGallery";
 
 type YearSectionProps = {
   data: TournamentYear;
+  photos: string[];
 };
 
-export default function YearSection({ data }: YearSectionProps) {
+export default function YearSection({ data, photos }: YearSectionProps) {
   return (
     <section id={`gads-${data.year}`} className="relative py-16 md:py-24 overflow-hidden">
       {/* Watermark year number */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
-        <span className="font-display text-[20rem] md:text-[30rem] text-white/[0.03] leading-none">
+        <span className="font-display text-[20rem] md:text-[30rem] text-white/3 leading-none">
           {data.year}
         </span>
       </div>
@@ -63,7 +64,7 @@ export default function YearSection({ data }: YearSectionProps) {
 
         <TeamGrid teams={data.teams} winnerName={data.winner.name} />
 
-        <PhotoGallery photos={data.photos} year={data.year} />
+        <PhotoGallery photos={photos} year={data.year} />
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ const navLinks = [
   { href: "/", label: "SĀKUMS" },
   { href: "/#par-turniru", label: "Par turnīru" },
   { href: "/turnira-vesture", label: "Vēsture" },
+  { href: "/reglaments", label: "Reglaments" },
 ];
 
 const LOGO_URL = "/images/CezaraKauss-2025-1536x1536.webp";

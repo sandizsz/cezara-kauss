@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { tournamentHistory } from "@/data/tournament-history";
+import { getYearPhotos } from "@/data/get-year-photos";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import VestureHero from "@/components/vesture/VestureHero";
@@ -41,11 +42,11 @@ export default function TurniraVesturePage() {
       <div className="bg-black">
         {tournamentHistory.map((yearData, i) => (
           <div key={yearData.year}>
-            <YearSection data={yearData} />
+            <YearSection data={yearData} photos={getYearPhotos(yearData.year)} />
             {/* Gold divider between years */}
             {i < tournamentHistory.length - 1 && (
               <div className="max-w-6xl mx-auto px-4 md:px-6">
-                <div className="h-px bg-gradient-to-r from-transparent via-cesar-gold/40 to-transparent" />
+                <div className="h-px bg-linear-to-r from-transparent via-cesar-gold/40 to-transparent" />
               </div>
             )}
           </div>

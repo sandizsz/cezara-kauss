@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useCallback } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 
 type LightboxProps = {
@@ -30,8 +31,8 @@ export default function Lightbox({ photos, currentIndex, onClose, onPrev, onNext
     };
   }, [handleKeyDown]);
 
-  return (
-    <div className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center" onClick={onClose}>
+  return createPortal(
+    <div className="fixed inset-0 z-100 bg-black/95 backdrop-blur-sm flex items-center justify-center" onClick={onClose}>
       {/* Close button */}
       <button
         onClick={onClose}
@@ -84,6 +85,7 @@ export default function Lightbox({ photos, currentIndex, onClose, onPrev, onNext
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs font-extrabold tracking-[0.3em] uppercase">
         {currentIndex + 1} / {photos.length}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
