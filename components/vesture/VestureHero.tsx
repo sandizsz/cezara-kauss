@@ -2,7 +2,7 @@ import { tournamentHistory } from "@/data/tournament-history";
 
 export default function VestureHero() {
   return (
-    <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center bg-black pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+    <section className="relative min-h-[75vh] md:min-h-[60vh] flex items-center justify-center bg-black pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-30"
