@@ -1,6 +1,6 @@
-import Navigation from "@/components/Navigation";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
 import RegistrationForm from "@/components/RegistrationForm";
-import Footer from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

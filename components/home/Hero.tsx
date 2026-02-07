@@ -28,7 +28,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative min-h-screen md:min-h-[95vh] flex items-center justify-center hero-gradient pt-20 pb-12 md:pt-24 md:pb-0">
+    <div className="relative min-h-screen flex items-center justify-center hero-gradient pt-24 pb-16 md:pt-32 md:pb-20">
       <div className="absolute inset-0 bg-black/70"></div>
 
       <div className="relative z-10 w-full max-w-6xl px-4 md:px-6 text-center text-white">
