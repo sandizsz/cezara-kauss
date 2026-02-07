@@ -16,11 +16,11 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-zinc-100 h-20 md:h-24 flex items-center shadow-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-zinc-100 h-14 md:h-16 flex items-center shadow-sm">
       <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
 
         <Link href="/" className="flex items-center gap-4 group">
-          <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+          <div className="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
             <img
               src={LOGO_URL}
               alt="Cēzara Kauss Logo"
@@ -31,7 +31,7 @@ export default function Navigation() {
             <span className="font-display text-xl md:text-2xl leading-none text-black tracking-tight uppercase">
               CĒZARA KAUSS
             </span>
-            <span className="text-[7px] md:text-[8px] text-cesar-gold font-black uppercase tracking-widest leading-tight mt-0.5">
+            <span className="text-[8px] md:text-[10px] text-cesar-gold font-black uppercase tracking-widest leading-tight mt-0.5">
               ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS
             </span>
           </div>
@@ -74,7 +74,7 @@ export default function Navigation() {
       </div>
 
       {isOpen && (
-        <div className="absolute top-20 left-0 w-full bg-white p-8 flex flex-col gap-6 shadow-2xl md:hidden animate-fade-in border-b border-zinc-100">
+        <div className="absolute top-14 left-0 w-full bg-white p-8 flex flex-col gap-6 shadow-2xl md:hidden animate-fade-in border-b border-zinc-100">
           {navLinks.map((link) => (
             <Link
               key={link.href}

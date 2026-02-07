@@ -38,7 +38,7 @@ export default function Hero() {
             ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS
           </span>
 
-          <h1 className="text-7xl sm:text-8xl md:text-[10rem] lg:text-[12rem] font-display font-bold uppercase tracking-normal mb-4 md:mb-6" style={{ lineHeight: '0.9' }}>
+          <h1 className="text-7xl sm:text-8xl md:text-[8rem] font-display font-bold uppercase tracking-normal mb-4 md:mb-6" style={{ lineHeight: '0.9' }}>
             CĒZARA
              <span className="gold-text-gradient ml-[10px]"> KAUSS</span>
           </h1>
@@ -59,7 +59,7 @@ export default function Hero() {
               </svg>
             </Link>
             <Link
-              href="/#galerija"
+              href="/turnira-vesture"
               className="w-full md:w-auto bg-black/50 backdrop-blur-md border-2 border-cesar-gold text-cesar-gold font-extrabold text-xs md:text-sm px-8 md:px-16 py-4 md:py-6 uppercase tracking-[0.2em] hover:bg-cesar-gold hover:text-black transition-all text-center"
             >
               Skatīt Turnīra arhīvu

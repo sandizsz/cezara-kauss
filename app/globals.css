@@ -93,7 +93,7 @@ html {
 
 /* Hero gradient background */
 .hero-gradient {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('/images/puto_karsava_futbola_turnirs_cezara_kauss_2024_uzvaretaji.webp');
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('/images/hero_image.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -117,6 +117,7 @@ html {
 .animate-fade-in {
   animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
 
 /* Display font styling */
 .font-display {

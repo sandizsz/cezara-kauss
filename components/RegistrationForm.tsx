@@ -116,7 +116,7 @@ export default function RegistrationForm() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-20 gap-4 md:gap-6">
         <div>
           <span className="section-label mb-3 md:mb-4">DALĪBA</span>
-          <h1 className="font-display text-[6rem] md:text-9xl uppercase tracking-normal text-black" style={{ lineHeight: '0.9' }}>
+          <h1 className="font-display text-7xl sm:text-8xl md:text-[8rem] uppercase tracking-normal text-black" style={{ lineHeight: '0.9' }}>
             PIETEIKT <br/><span className="gold-text-gradient">KOMANDU TURNĪRAM</span>
           </h1>
         </div>
@@ -134,32 +134,32 @@ export default function RegistrationForm() {
           <form onSubmit={handleSubmit} className="space-y-6 md:space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
               <div className="space-y-2">
-                <label className="text-[10px] text-zinc-400 font-extrabold tracking-widest uppercase">KOMANDAS NOSAUKUMS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KOMANDAS NOSAUKUMS</label>
                 <input
                   type="text"
                   required
-                  placeholder="TEAM NAME"
+                  placeholder="FK Cezars"
                   value={formData.teamName}
                   onChange={(e) => setFormData({ ...formData, teamName: e.target.value })}
-                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-display text-2xl md:text-5xl text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase"
+                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-base md:text-lg text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase"
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-[10px] text-zinc-400 font-extrabold tracking-widest uppercase">KAPTEIŅA VĀRDS, UZVĀRDS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KAPTEIŅA VĀRDS, UZVĀRDS</label>
                 <input
                   type="text"
                   required
-                  placeholder="CAPTAIN NAME"
+                  placeholder="Andris Vītols"
                   value={formData.captainName}
                   onChange={(e) => setFormData({ ...formData, captainName: e.target.value })}
-                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-display text-2xl md:text-5xl text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase"
+                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-base md:text-lg text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
               <div className="space-y-2">
-                <label className="text-[10px] text-zinc-400 font-extrabold tracking-widest uppercase">TĀLRUNIS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">TĀLRUNIS</label>
                 <input
                   type="tel"
                   required
@@ -170,7 +170,7 @@ export default function RegistrationForm() {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-[10px] text-zinc-400 font-extrabold tracking-widest uppercase">E-PASTS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">E-PASTS</label>
                 <input
                   type="email"
                   required
@@ -184,7 +184,7 @@ export default function RegistrationForm() {
 
             {/* Logo upload */}
             <div className="space-y-2">
-              <label className="text-[10px] text-zinc-400 font-extrabold tracking-widest uppercase">KOMANDAS LOGO (NEOBLIGĀTI)</label>
+              <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KOMANDAS LOGO (NEOBLIGĀTI)</label>
               <input
                 ref={fileInputRef}
                 type="file"
@@ -230,7 +230,7 @@ export default function RegistrationForm() {
 
             {/* Comment */}
             <div className="space-y-2">
-              <label className="text-[10px] text-zinc-400 font-extrabold tracking-widest uppercase">KOMENTĀRS (NEOBLIGĀTI)</label>
+              <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KOMENTĀRS (NEOBLIGĀTI)</label>
               <textarea
                 placeholder="PAPILDUS INFORMĀCIJA..."
                 value={formData.comment}
@@ -261,22 +261,22 @@ export default function RegistrationForm() {
 
         {/* Sidebar — shows second on mobile (order-2), first on desktop (lg:order-1) */}
         <div className="order-2 lg:order-1 lg:col-span-4 space-y-4 md:space-y-8">
-          <div className="bg-stadium-gray p-5 md:p-10 space-y-5 md:space-y-10 rounded-sm border-l-8 border-black">
+          <div className="bg-stadium-gray p-4 md:p-10 space-y-5 md:space-y-10 rounded-sm border-l-8 border-black">
             <div className="flex items-center gap-3 border-b border-zinc-200 pb-3 md:pb-4">
               <svg className="w-5 h-5 text-cesar-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
-              <h3 className="font-display text-2xl md:text-4xl uppercase tracking-wider">NOTEIKUMI</h3>
+              <h3 className="font-display text-2xl md:text-4xl uppercase tracking-wider">Reglaments</h3>
             </div>
             <ul className="text-zinc-500 text-[10px] md:text-[11px] font-extrabold space-y-3 md:space-y-6 uppercase tracking-widest">
               <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> MINIMĀLAIS VECUMS: 15 GADI</li>
               <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> FORMĀTS: 5 VS 5 (+REZERVE)</li>
-              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> MAX SPĒLĒTĀJU SKAITS: 10</li>
+              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> MAX SPĒLĒTĀJU SKAITS komandā: 10</li>
               <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> GARANTĒTS SPĒĻU SKAITS: 4</li>
             </ul>
             <Link
               href="/reglaments"
-              className="flex items-center justify-center gap-2 w-full bg-black text-cesar-gold font-extrabold text-[10px] md:text-xs py-3 md:py-4 uppercase tracking-[0.2em] hover:bg-zinc-800 transition-all border-b-4 border-cesar-gold"
+              className="flex items-center justify-center gap-2 w-full bg-black text-cesar-gold font-extrabold text-[10px] md:text-xs px-4 py-3 md:py-4 uppercase tracking-[0.1em] md:tracking-[0.2em] hover:bg-zinc-800 transition-all border-b-4 border-cesar-gold"
             >
               Pilns turnīra reglaments
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

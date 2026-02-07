@@ -1,9 +1,11 @@
+import { CalendarDays, MapPin, Users, Trophy, type LucideIcon } from "lucide-react";
+
 export default function About() {
-  const cards = [
-    { icon: "📅", title: "DATUMS", detail: "26. JŪLIJS", sub: "2026. GADS" },
-    { icon: "📍", title: "VIETA", detail: "GULBENES Pilsētas Stadions", sub: "O. KALPAKA IELA 1A" },
-    { icon: "👥", title: "KOMANDAS", detail: "5 VS 5", sub: "MAX 24 SQUADI" },
-    { icon: "🏆", title: "BALVAS", detail: "€1,000.00", sub: "BALVU FONDS" },
+  const cards: { icon: LucideIcon; title: string; detail: string; sub: string }[] = [
+    { icon: CalendarDays, title: "DATUMS", detail: "26. JŪLIJS", sub: "2026. GADS" },
+    { icon: MapPin, title: "VIETA", detail: "GULBENES Pilsētas Stadions", sub: "O. KALPAKA IELA 1A" },
+    { icon: Users, title: "FORMĀTS", detail: "5 x 5", sub: "Dinamisks turnīra formāts" },
+    { icon: Trophy, title: "DALĪBAS MAKSA", detail: "€100", sub: "No komandas" },
   ];
 
   return (
@@ -25,19 +27,22 @@ Turnīru organizē 4 draugi – Artūrs, Ričards, Jānis un Sandis, kuriem futb
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8">
-          {cards.map((card, i) => (
-            <div
-              key={i}
-              className="bg-black p-4 md:p-10 border-b-8 border-cesar-gold card-shadow relative overflow-hidden min-h-[120px] min-h-[200px]"
-            >
-              <div className="text-cesar-gold mb-4 md:mb-8 text-2xl md:text-3xl">
-                {card.icon}
+          {cards.map((card, i) => {
+            const Icon = card.icon;
+            return (
+              <div
+                key={i}
+                className="bg-black p-4 md:p-10 border-b-8 border-cesar-gold card-shadow relative overflow-hidden min-h-[120px]"
+              >
+                <div className="text-cesar-gold mb-4 md:mb-8">
+                  <Icon className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
+                </div>
+                <span className="text-[12px] md:text-[14px] text-zinc-500 font-extrabold tracking-widest mb-1 md:mb-2 block">{card.title}</span>
+                <h3 className="font-display text-2xl sm:text-3xl md:text-5xl text-white mb-1">{card.detail}</h3>
+                <p className="text-cesar-gold font-bold text-[16px] uppercase tracking-widest">{card.sub}</p>
               </div>
-              <span className="text-[8px] md:text-[10px] text-zinc-500 font-extrabold tracking-widest mb-1 md:mb-2 block">{card.title}</span>
-              <h3 className="font-display text-2xl sm:text-3xl md:text-5xl text-white mb-1">{card.detail}</h3>
-              <p className="text-cesar-gold font-bold uppercase tracking-widest">{card.sub}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

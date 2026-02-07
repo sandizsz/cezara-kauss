@@ -26,14 +26,17 @@ export default function HallOfFame() {
   ];
 
   const toggleCard = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
+    // Only toggle on mobile, desktop uses hover
+    if (window.innerWidth < 768) {
+      setExpandedIndex(expandedIndex === index ? null : index);
+    }
   };
 
   return (
     <section className="py-16 md:py-32 bg-black text-white relative overflow-hidden border-t border-white/5">
        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-10 md:mb-24">
-             <span className="section-label mb-3 md:mb-6">Cēzara Kauss</span>
+             <span className="section-label mb-4 !bg-cesar-gold !text-black">Cēzara Kauss</span>
              <h2 className="font-display text-7xl sm:text-8xl md:text-[10rem] uppercase tracking-normal" style={{ lineHeight: '0.9' }}>
                Slavas <span className="gold-text-gradient">Zāle</span>
              </h2>

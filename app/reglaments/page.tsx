@@ -158,14 +158,18 @@ export default function ReglamentsPage() {
       <main>
         {/* Hero */}
         <section className="relative bg-black pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
-          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black opacity-30" />
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-fixed opacity-30"
+            style={{ backgroundImage: "url('/images/minifutbola turnīrs cēzara kauss.webp')" }}
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center text-white">
             <div className="animate-reveal" style={{ animationDelay: "0.1s" }}>
               <span className="hero-label mb-4 md:mb-6 text-cesar-gold text-[10px] md:text-xs">
                 CĒZARA KAUSS 
               </span>
               <h1
-                className="font-display font-bold text-6xl sm:text-8xl md:text-[10rem] uppercase tracking-normal mb-4 md:mb-6"
+                className="font-display font-bold text-7xl sm:text-8xl md:text-[8rem] uppercase tracking-normal mb-4 md:mb-6"
                 style={{ lineHeight: "0.9" }}
               >
                 TURNĪRA

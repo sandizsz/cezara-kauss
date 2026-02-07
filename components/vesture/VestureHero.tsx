@@ -2,11 +2,11 @@ import { tournamentHistory } from "@/data/tournament-history";
 
 export default function VestureHero() {
   return (
-    <section className="relative min-h-[75vh] md:min-h-[60vh] flex items-center justify-center bg-black pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-30"
-        style={{ backgroundImage: "url('/images/puto_karsava_futbola_turnirs_cezara_kauss_2024_uzvaretaji.webp')" }}
+        style={{ backgroundImage: "url('/images/balvi_winners.webp')" }}
       />
       <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black" />
 
@@ -17,7 +17,7 @@ export default function VestureHero() {
           </span>
 
           <h1
-            className="font-display font-bold text-6xl sm:text-8xl md:text-[10rem] uppercase tracking-normal mb-4 md:mb-6"
+            className="text-7xl sm:text-8xl md:text-[8rem] font-bold font-display uppercase tracking-normal mb-4 md:mb-6"
             style={{ lineHeight: "0.9" }}
           >
             TURNĪRA
@@ -28,8 +28,14 @@ export default function VestureHero() {
             Rezultāti, foto galerija un statistika no visiem Cēzara Kauss turnīriem
           </p>
         </div>
+      </div>
 
-   
+      {/* Bouncing scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-bounce">
+        <span className="text-[9px] text-zinc-500 font-extrabold uppercase tracking-[0.3em]">Skatīt</span>
+        <svg className="w-5 h-5 text-cesar-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
       </div>
     </section>
   );

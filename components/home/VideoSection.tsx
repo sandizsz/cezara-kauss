@@ -13,12 +13,12 @@ export default function VideoSection() {
           <h2 className="font-display text-7xl sm:text-8xl md:text-[10rem] uppercase tracking-normal text-black" style={{ lineHeight: '0.9' }}>
            Video <span className="gold-text-gradient">Atskats</span>
           </h2>
-          <p className="mt-4 md:mt-8 text-zinc-500 font-extrabold text-[10px] uppercase tracking-[0.5em] max-w-md mx-auto">
+          <p className="mt-4 md:mt-8 text-zinc-500 font-extrabold text-[14px] uppercase tracking-[0.5em] max-w-md mx-auto">
            Ja vēlies to piedzīvot pats - reģistrē komandu un tiekamies jau 26. jūlijā.
           </p>
         </div>
 
-        <div className="relative group max-w-5xl mx-auto p-4 ">
+        <div className="relative group max-w-5xl mx-auto ">
           <div className="absolute inset-0 border-2 border-cesar-gold/20 -m-2 pointer-events-none hidden md:block"></div>
           <div className="relative aspect-video bg-zinc-900 border-2 md:border-4 border-white overflow-hidden">
             {playing ? (

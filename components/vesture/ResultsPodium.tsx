@@ -28,7 +28,7 @@ export default function ResultsPodium({ winner, runnerUp, thirdPlace, finalScore
 
         {/* 1st place */}
         <div className="flex-1 max-w-[200px]">
-          <div className="bg-zinc-900 border-2 border-cesar-gold p-4 md:p-6 text-center h-[180px] md:h-[240px] flex flex-col justify-end relative">
+          <div className="bg-zinc-900 border-2 border-cesar-gold p-4 md:p-6 text-center h-[240px] md:h-[300px] flex flex-col justify-end relative">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-cesar-gold text-black text-[8px] font-black tracking-widest uppercase px-3 py-1">
               Čempioni
             </div>
