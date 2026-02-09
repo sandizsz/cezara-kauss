@@ -44,8 +44,8 @@ export default function Hero() {
           </h1>
 
           <p className="max-w-xl mx-auto text-zinc-300 text-base md:text-2xl mb-8 md:mb-12 font-medium  tracking-tight px-2">
-            Futbola turnīrs par godu Arūram deksnim <br />
-            SATIKŠANĀS. CĪŅA. <span className="text-cesar-gold font-bold">LEĢENDA.</span>
+            Vairāk nekā turnīrs - īsti futbola svētki. <br />
+            EMOCIJAS. DRAUGI.  <span className="text-cesar-gold font-bold">FUTBOLS.</span>
           </p>
 
           <div className="flex flex-col md:flex-row gap-3 md:gap-6 justify-center items-center mb-10 md:mb-20">

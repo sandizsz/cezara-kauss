@@ -31,7 +31,7 @@ export default function Navigation() {
             <span className="font-display text-xl md:text-2xl leading-none text-black tracking-tight uppercase">
               CĒZARA KAUSS
             </span>
-            <span className="text-[8px] md:text-[10px] text-cesar-gold font-black uppercase tracking-widest leading-tight mt-0.5">
+            <span className="text-[8px] md:text-[10px] text-cesar-gold font-bold uppercase tracking-widest leading-tight mt-0.5">
               ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS
             </span>
           </div>

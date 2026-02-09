@@ -3,42 +3,43 @@ import { Crown } from "lucide-react";
 const team = [
   {
     name: "Artūrs Deksnis",
-    role: "Dibinātājs",
+    role: "Idejas autors",
     image: "/images/team/artursdeksnis.webp",
     founder: true,
   },
   {
-    name: "Ričards",
-    role: "Organizators",
+    name: "Ričards Deksnis",
+    role: "Tehniskais nodrošinājums",
     image: "https://placehold.co/600x600/1a1a1a/666666?text=R",
   },
   {
-    name: "Jānis",
-    role: "Organizators",
-    image: "https://placehold.co/600x600/1a1a1a/666666?text=J",
+    name: "Arita Klesmane",
+    role: "Sabiedriskās attiecības",
+    image: "/images/team/aritav2.png",
   },
   {
-    name: "Sandis",
-    role: "Organizators",
-    image: "images/team/Sandis.png",
+    name: "Sandis Sirmais",
+    role: "Mārketings & IT",
+    image: "images/team/sandis.png",
+  },
+  {
+    name: "Jānis Stībelis",
+    role: "DJ / Atmosfēra",
+    image: "/images/team/janisstibelis.png",
   },
   {
     name: "Artēmijs Semjonovs",
-    role: "Galvenais tiesnesis",
-    image: "/images/team/sems.webp",
+    role: "Galvenais runasvīrs",
+    image: "/images/team/sems.png",
   },
-  {
-    name: "DJ JVS",
-    role: "DJ / Atmosfēra",
-    image: "https://placehold.co/600x600/1a1a1a/666666?text=DJ",
-  },
+  
 ];
 
 export default function TeamSection() {
   return (
     <section className="py-16 md:py-32 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-10 md:mb-20">
+        <div className="text-left md:text-center mb-10 md:mb-20">
           <span className="section-label mb-4">#TEAMCEZARAKAUSS</span>
           <h2
             className="font-display text-5xl sm:text-7xl md:text-[8rem] uppercase tracking-normal text-black"
@@ -46,7 +47,7 @@ export default function TeamSection() {
           >
             Mūsu <span className="gold-text-gradient">Komanda</span>
           </h2>
-            <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed mx-auto max-w-4xl">
+            <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed md:mx-auto max-w-4xl">
 
 
            Mēs esam vietējie patrioti ar globālu redzējumu par to, kādam jābūt mūsdienīgam futbola pasākumam. Mūsu komandā apvienojušies organizatori, kuriem rūp Latvijas futbola nākotne un reģionu attīstība. <br/> <br/>
@@ -84,7 +85,7 @@ Mēs ticam, ka lielais futbols sākas tieši šeit – vietējos stadionos. Mūs
                     <div className="flex items-center gap-1.5 mb-1.5">
                       <Crown className="w-3.5 h-3.5 text-cesar-gold" strokeWidth={1.5} />
                       <span className="text-[8px] md:text-[9px] text-cesar-gold font-extrabold tracking-[0.2em] uppercase">
-                        #10 — Vienmēr ar mums
+                        Vienmēr ar mums
                       </span>
                     </div>
                   )}

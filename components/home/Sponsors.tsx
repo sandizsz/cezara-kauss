@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const sponsors = ["GULBENES NOVADS", "SIA NLZ", "GULBENES ALUS", "JC BĀZE", "WINWIN SPORTS", "4MOVE", "LATVIJAS FUTBOLS"];
+const sponsors = ["GULBENES NOVADS", "SIA NLZ", "GULBENES ALUS", "JC BĀZE", "WINWIN SPORTS", "4MOVE", "LFF ZA", "DHL", "ELITE NORDIC CONSTRUCTIONS", "AKVILE", "WATERLIX", "BOARD GAME ZIBSNIS", "JANA-S", "DIMDIŅI", "4MOVE", "BUMBO.LV", "KURETI CAFE", "O'BYTE", "SKRĪVERU SALDUMI", "PURE", "7DAYS, ", "GRANINI"];
 
 export default function Sponsors() {
   const containerRef = useRef<HTMLDivElement>(null);

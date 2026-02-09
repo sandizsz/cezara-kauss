@@ -18,7 +18,7 @@ export default function Footer() {
             <h4 className="font-display text-2xl md:text-3xl text-white leading-none uppercase tracking-tight">
               CĒZARA<span className="text-cesar-gold">KAUSS</span>
             </h4>
-            <p className="text-zinc-500 text-[8px] md:text-[10px] mt-1 uppercase tracking-[0.3em] font-bold">
+            <p className="text-zinc-500 text-[10px] md:text-xs mt-1 uppercase tracking-[0.3em] font-bold">
               Artūra Dekšņa Piemiņas Turnīrs
             </p>
           </div>
@@ -26,11 +26,12 @@ export default function Footer() {
 
         {/* Navigation */}
         <div className="space-y-4 md:space-y-6">
-          <h5 className="font-display text-xl md:text-2xl text-cesar-gold uppercase tracking-widest">Portāls</h5>
-          <div className="flex flex-col gap-3 md:gap-4 text-zinc-400 font-extrabold text-[10px] uppercase tracking-[0.3em]">
-            <Link href="/#par-turniru" className="hover:text-cesar-gold transition-colors text-left">Sākums</Link>
-            <Link href="/#galerija" className="hover:text-cesar-gold transition-colors text-left">Galerija</Link>
-            <Link href="/#video" className="hover:text-cesar-gold transition-colors text-left">Video</Link>
+          <h5 className="font-display text-xl md:text-2xl text-cesar-gold uppercase tracking-widest">Navigācija</h5>
+          <div className="flex flex-col gap-3 md:gap-4 text-zinc-400 font-extrabold text-xs uppercase tracking-[0.3em]">
+            <Link href="/" className="hover:text-cesar-gold transition-colors text-left">Sākums</Link>
+            <Link href="/#par-turniru" className="hover:text-cesar-gold transition-colors text-left">Par turnīru</Link>
+            <Link href="/turnira-vesture" className="hover:text-cesar-gold transition-colors text-left">Vēsture</Link>
+            <Link href="/reglaments" className="hover:text-cesar-gold transition-colors text-left">Reglaments</Link>
             <Link href="/registret-komandu" className="hover:text-cesar-gold transition-colors text-left">Reģistrācija</Link>
           </div>
         </div>
@@ -73,18 +74,18 @@ export default function Footer() {
             </a>
           </div>
 
-          <p className="text-zinc-600 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+          <a href="mailto:cezarakauss@gmail.com" className="text-zinc-600 hover:text-cesar-gold transition-colors text-xs md:text-sm font-bold uppercase tracking-widest">
             cezarakauss@gmail.com
-          </p>
+          </a>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 mt-16 md:mt-20 pt-8 md:pt-12 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-zinc-700 text-[10px] uppercase font-bold tracking-[0.3em]">
-          © 2026 Cēzara Kauss. Official Portal.
+        <p className="text-zinc-700 text-xs uppercase font-bold tracking-[0.3em]">
+          © 2026 Cēzara Kauss.
         </p>
-        <p className="text-zinc-700 text-[10px] uppercase font-bold tracking-[0.3em]">
-          Est. 2021 Gulbene
+        <p className="text-zinc-700 text-xs uppercase font-bold tracking-[0.3em]">
+          Est. 2024 Gulbene
         </p>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import { CalendarDays, MapPin, Users, Trophy, type LucideIcon } from "lucide-rea
 
 export default function About() {
   const cards: { icon: LucideIcon; title: string; detail: string; sub: string }[] = [
-    { icon: CalendarDays, title: "DATUMS", detail: "26. JŪLIJS", sub: "2026. GADS" },
+    { icon: CalendarDays, title: "DATUMS", detail: "25. JŪLIJS", sub: "2026. GADS" },
     { icon: MapPin, title: "VIETA", detail: "GULBENES Pilsētas Stadions", sub: "O. KALPAKA IELA 1A" },
     { icon: Users, title: "FORMĀTS", detail: "5 x 5", sub: "Dinamisks turnīra formāts" },
     { icon: Trophy, title: "DALĪBAS MAKSA", detail: "€100", sub: "No komandas" },
@@ -20,7 +20,7 @@ export default function About() {
             </h2>
           </div>
           <p className="max-w-md text-zinc-500 font-medium leading-relaxed">
-            Cēzara Kauss ir jauns futbola turnīrs, kas savu debiju piedzīvoja 2024. gada 27. jūlijā, Gulbenes pilsētas svētku laikā. Šis turnīrs, kas norisināsies svētku atmosfērā, sola aizraujošu dienu gan sporta faniem, gan ģimenēm ar bērniem. <br /> <br />
+            Cēzara Kauss ir amatieru futbola turnīrs, kas savu debiju piedzīvoja 2024. gada 27. jūlijā, Gulbenes pilsētas svētku laikā. Šis turnīrs, kas ikgadu norisinās svētku atmosfērā, piedāvā aizraujošu dienu gan sporta faniem, gan ģimenēm ar bērniem. <br /> <br />
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function About() {
                 </div>
                 <span className="text-[12px] md:text-[14px] text-zinc-500 font-extrabold tracking-widest mb-1 md:mb-2 block">{card.title}</span>
                 <h3 className="font-display text-2xl sm:text-3xl md:text-5xl text-white mb-1">{card.detail}</h3>
-                <p className="text-cesar-gold font-bold text-[16px] uppercase tracking-widest">{card.sub}</p>
+                <p className="text-cesar-gold font-bold text-[14px] md:text-[16px] uppercase tracking-widest">{card.sub}</p>
               </div>
             );
           })}

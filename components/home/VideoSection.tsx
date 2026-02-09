@@ -14,7 +14,7 @@ export default function VideoSection() {
            Video <span className="gold-text-gradient">Atskats</span>
           </h2>
           <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed mx-auto">
-           Ja vēlies to piedzīvot pats - reģistrē komandu un tiekamies jau 26. jūlijā.
+           Ja vēlies to piedzīvot pats - <a href="/registret-komandu" className="text-cesar-gold font-bold hover:underline">reģistrē savu komandu</a> un tiekamies jau 25. jūlijā.
           </p>
         </div>
 
@@ -24,8 +24,8 @@ export default function VideoSection() {
             {playing ? (
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/30YlLGeUReY?autoplay=1&mute=0&controls=1&loop=1&playlist=30YlLGeUReY"
-                title="Cēzara Kauss Highlights"
+                src="https://www.youtube.com/embed/wOZpFlpIMco?si=k5Rq-j8S3-v1V6eF&autoplay=1"
+                title="Cēzara Kauss 2025 video atskats"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -35,8 +35,8 @@ export default function VideoSection() {
                 className="w-full h-full relative cursor-pointer"
               >
                 <img
-                  src="https://img.youtube.com/vi/30YlLGeUReY/maxresdefault.jpg"
-                  alt="Cēzara Kauss video thumbnail"
+                  src="https://img.youtube.com/vi/wOZpFlpIMco/maxresdefault.jpg"
+                  alt="Cēzara Kauss 2025 video atskats thumbnail"
                   className="w-full h-full object-cover grayscale"
                 />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">

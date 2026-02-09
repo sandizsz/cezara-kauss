@@ -34,14 +34,14 @@ Un tas vēl nav viss. 26. jūlijs ir arī Gulbenes pilsētas svētku diena, kas 
             return (
               <div
                 key={i}
-                className="bg-zinc-900 p-4 md:p-10 border-b-8 border-cesar-gold card-shadow relative overflow-hidden min-h-[120px]"
+                className="bg-zinc-900 p-4 pb-6 md:p-10 border-b-8 border-cesar-gold card-shadow relative overflow-hidden min-h-[120px]"
               >
                 <div className="text-cesar-gold mb-4 md:mb-8">
                   <Icon className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
                 </div>
 
                 <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-white mb-1">{item.title}</h3>
-                <p className="text-cesar-gold text-[14px] md:text-[16px] font-medium tracking-widest">{item.desc}</p>
+                <p className="text-zinc-400 font-medium text-[16px] md:text-base leading-relaxed">{item.desc}</p>
               </div>
             );
           })}

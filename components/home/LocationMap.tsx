@@ -27,34 +27,42 @@ Gulbene ir fantastiska pilsēta ko noteikti vērts aplūkot un iepazīt, tāpēc
                    <p className="text-lg md:text-2xl font-bold ">O. KALPAKA IELA 1A, GULBENE</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3 md:gap-6">
-                   <div className="bg-white p-4 md:p-8 border-t-4 border-cesar-gold shadow-sm relative group overflow-hidden">
+                   <div className="bg-white p-4 md:p-5 border-t-4 border-cesar-gold shadow-sm relative group overflow-hidden">
                       <p className="text-[10px] text-zinc-400 font-extrabold tracking-widest mb-1">SEGUMS</p>
-                      <p className="font-bold uppercase text-sm md:text-base">DABĪGAIS ZĀLIENS</p>
+                      <p className="font-bold uppercase text-sm md:text-base whitespace-nowrap">DABĪGAIS ZĀLIENS</p>
                    </div>
-                   <div className="bg-white p-4 md:p-8 border-t-4 border-cesar-gold shadow-sm relative group overflow-hidden">
+                   <div className="bg-white p-4 md:p-5 border-t-4 border-cesar-gold shadow-sm relative group overflow-hidden">
                       <p className="text-[10px] text-zinc-400 font-extrabold tracking-widest mb-1">STĀVVIETAS</p>
                       <p className="font-bold uppercase text-sm md:text-base">BEZ MAKSAS</p>
                    </div>
                 </div>
              </div>
 
-             <button className="w-full py-4 md:py-6 bg-black text-cesar-gold font-extrabold text-xs uppercase tracking-widest hover:bg-zinc-800 transition-all flex items-center justify-center gap-4 border-b-4 border-cesar-gold">
+             <a href="https://visitgulbene.lv" target="_blank" rel="noopener noreferrer" className="w-full py-4 md:py-6 bg-black text-cesar-gold font-extrabold text-xs uppercase tracking-widest hover:bg-zinc-800 transition-all flex items-center justify-center gap-4 border-b-4 border-cesar-gold">
                 VISITGULBENE.LV
                 <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-             </button>
+             </a>
           </div>
 
-          <div className="lg:col-span-7 relative group rounded-sm overflow-hidden card-shadow border-4 border-white">
-             <img
-               src="https://images.unsplash.com/photo-1524015348271-3341a70ba67e?q=80&w=1400"
-               alt="Gulbene Stadium"
-               className="w-full h-[300px] md:h-[500px] lg:h-[650px] object-cover grayscale hover:grayscale-0 transition-all duration-1000"
-             />
-             <div className="absolute inset-0 bg-black/30"></div>
-            
-            
+          <div className="lg:col-span-7 flex flex-col gap-3 md:gap-4">
+             <div className="relative group rounded-sm overflow-hidden card-shadow border-4 border-white">
+               <img
+                 src="/images/gulbenes_stadions.jpg"
+                 alt="Gulbenes pilsētas stadions — turnīra norises vieta"
+                 className="w-full h-[200px] md:h-[300px] lg:h-[370px] object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+               />
+               <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
+             </div>
+             <div className="relative group rounded-sm overflow-hidden card-shadow border-4 border-white">
+               <img
+                 src="/images/gulbenes_stadions2.jpeg"
+                 alt="Cēzara Kauss turnīra spēle Gulbenes stadionā"
+                 className="w-full h-[200px] md:h-[300px] lg:h-[370px] object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+               />
+               <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
+             </div>
           </div>
        </div>
     </section>
