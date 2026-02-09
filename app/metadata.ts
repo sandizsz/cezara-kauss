@@ -46,4 +46,7 @@ export const siteMetadata: Metadata = {
       "lv-LV": "https://cezarakauss.lv",
     },
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
 };
