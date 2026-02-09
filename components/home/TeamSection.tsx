@@ -39,14 +39,26 @@ export default function TeamSection() {
     <section className="py-16 md:py-32 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-10 md:mb-20">
-          <span className="section-label mb-4">Aiz kulisēm</span>
+          <span className="section-label mb-4">#TEAMCEZARAKAUSS</span>
           <h2
             className="font-display text-5xl sm:text-7xl md:text-[8rem] uppercase tracking-normal text-black"
             style={{ lineHeight: "0.9" }}
           >
             Mūsu <span className="gold-text-gradient">Komanda</span>
           </h2>
+            <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed mx-auto max-w-4xl">
+
+
+           Mēs esam vietējie patrioti ar globālu redzējumu par to, kādam jābūt mūsdienīgam futbola pasākumam. Mūsu komandā apvienojušies organizatori, kuriem rūp Latvijas futbola nākotne un reģionu attīstība. <br/> <br/>
+
+Mēs ticam, ka lielais futbols sākas tieši šeit – vietējos stadionos. Mūsu dzinējspēks ir vēlme pierādīt, ka augstākā līmeņa organizatoriskā kvalitāte ir iespējama jebkurā Latvijas vietā, ja vien pie darba ķeras cilvēki ar degsmi un īsto attieksmi.
+
+
+
+          </p>
         </div>
+
+        
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
           {team.map((member, i) => (

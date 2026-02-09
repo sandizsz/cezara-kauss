@@ -32,7 +32,7 @@ export default function MemorialLegacy() {
                   alt="Artūrs Deksnis Legacy"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 opacity-80"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
                    <p className="font-display text-3xl md:text-5xl text-cesar-gold leading-none">ARTŪRA PIEMIŅAS <br/> TURNĪRS</p>
                    <p className="text-[10px] text-zinc-400 font-black tracking-widest uppercase mt-2 md:mt-4">LEGACY EDITION // SINCE 2021</p>

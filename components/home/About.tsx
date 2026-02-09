@@ -21,8 +21,6 @@ export default function About() {
           </div>
           <p className="max-w-md text-zinc-500 font-medium leading-relaxed">
             Cēzara Kauss ir jauns futbola turnīrs, kas savu debiju piedzīvoja 2024. gada 27. jūlijā, Gulbenes pilsētas svētku laikā. Šis turnīrs, kas norisināsies svētku atmosfērā, sola aizraujošu dienu gan sporta faniem, gan ģimenēm ar bērniem. <br /> <br />
-
-Turnīru organizē 4 draugi – Artūrs, Ričards, Jānis un Sandis, kuriem futbols ir sirdslieta jau no bērnības. Ar šo turnīru organizatori ir apņēmības pilni parādīt, ka reģionos visā Latvijā var veiksmīgi rīkot augstas kvalitātes, ģimenēm draudzīgus futbola pasākumus, radot iespēju visiem labi pavadīt laiku un saliedēties.
           </p>
         </div>
 

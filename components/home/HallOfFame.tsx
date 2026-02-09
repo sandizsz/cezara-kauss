@@ -36,7 +36,7 @@ export default function HallOfFame() {
     <section className="py-16 md:py-32 bg-black text-white relative overflow-hidden border-t border-white/5">
        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-10 md:mb-24">
-             <span className="section-label mb-4 !bg-cesar-gold !text-black">Cēzara Kauss</span>
+             <span className="section-label mb-4 bg-cesar-gold! text-black!">Cēzara Kauss</span>
              <h2 className="font-display text-7xl sm:text-8xl md:text-[10rem] uppercase tracking-normal" style={{ lineHeight: '0.9' }}>
                Slavas <span className="gold-text-gradient">Zāle</span>
              </h2>
@@ -57,7 +57,7 @@ export default function HallOfFame() {
                           alt={`${w.team} ${w.year}`}
                           className="w-full h-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40"></div>
+                        <div className="absolute inset-0 bg-linear-to-t from-black via-black/80 to-black/40"></div>
                      </div>
                      <div className="relative z-10 p-8 flex flex-col items-center w-full">
                         {/* Default centered content */}

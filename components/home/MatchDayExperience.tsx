@@ -13,7 +13,7 @@ export default function MatchDayExperience() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-6">
           <div>
-            <span className="section-label mb-4 !bg-cesar-gold !text-black">101 iemesls</span>
+            <span className="section-label mb-4 bg-cesar-gold! text-black!">101 iemesls</span>
             <h2 className="font-display text-5xl sm:text-7xl uppercase tracking-normal text-white mb-[-10px]" style={{ lineHeight: '0.9' }}>
               KĀPĒC APMEKLĒT <br />FUTBOLA TURNĪRU
               <br/><span className="gold-text-gradient">CĒZARA KAUSS?</span>

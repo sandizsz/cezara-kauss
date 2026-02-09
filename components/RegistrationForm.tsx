@@ -276,7 +276,7 @@ export default function RegistrationForm() {
             </ul>
             <Link
               href="/reglaments"
-              className="flex items-center justify-center gap-2 w-full bg-black text-cesar-gold font-extrabold text-[10px] md:text-xs px-4 py-3 md:py-4 uppercase tracking-[0.1em] md:tracking-[0.2em] hover:bg-zinc-800 transition-all border-b-4 border-cesar-gold"
+              className="flex items-center justify-center gap-2 w-full bg-black text-cesar-gold font-extrabold text-[10px] md:text-xs px-4 py-3 md:py-4 uppercase tracking-wide md:tracking-[0.2em] hover:bg-zinc-800 transition-all border-b-4 border-cesar-gold"
             >
               Pilns turnīra reglaments
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

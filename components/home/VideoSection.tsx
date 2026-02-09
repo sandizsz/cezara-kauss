@@ -13,7 +13,7 @@ export default function VideoSection() {
           <h2 className="font-display text-7xl sm:text-8xl md:text-[10rem] uppercase tracking-normal text-black" style={{ lineHeight: '0.9' }}>
            Video <span className="gold-text-gradient">Atskats</span>
           </h2>
-          <p className="mt-4 md:mt-8 text-zinc-500 font-extrabold text-[14px] uppercase tracking-[0.5em] max-w-md mx-auto">
+          <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed mx-auto">
            Ja vēlies to piedzīvot pats - reģistrē komandu un tiekamies jau 26. jūlijā.
           </p>
         </div>
