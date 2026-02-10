@@ -10,7 +10,7 @@ const team = [
   {
     name: "Ričards Deksnis",
     role: "Tehniskais nodrošinājums",
-    image: "https://placehold.co/600x600/1a1a1a/666666?text=R",
+    image: "/images/team/ricards.webp",
   },
   {
     name: "Arita Klesmane",

@@ -3,7 +3,7 @@ import { Music, FerrisWheel, Trophy, UtensilsCrossed } from "lucide-react";
 export default function MatchDayExperience() {
   const features = [
     { icon: Music, title: 'Jautra atmosfēra & mūzika', desc: 'Atmosfēru stadionā uzbursim kopīgi - atbalstot savējos un lieliski pavadot laiku, taču par mūziku, visas dienas garumā, būs atbildīgs DJ JVS' },
-    { icon: FerrisWheel, title: 'Atrakcijas bērniem', desc: 'Ierodies ar ģimeni un nedomā par to, kā izklaidēt mazākos, par to padomāsim mēs. Piepūšamās atrakcijas, kartingi, cukurvate, popkorns un citas aktivitātes būs pieejamas visu dienu.' },
+    { icon: FerrisWheel, title: 'Atrakcijas bērniem', desc: 'Ierodies ar ģimeni un nedomā par to, kā izklaidēt mazākos, par to padomāsim mēs. Piepūšamās atrakcijas, cukurvate, popkorns un citas aktivitātes būs pieejamas visu dienu.' },
     { icon: Trophy, title: 'Konkursi skatītājiem', desc: 'Arī skatītājiem jābūt gataviem draudzīgām sacensībām. Piedalies un saņem balvas no mūsu atbalstītājiem.' },
     { icon: UtensilsCrossed, title: 'Ēdieni & dzērieni', desc: 'Spēlējot un atbalstot savu komandu, tiks patērēts daudz kaloriju un enerģijas, tāpēc turnīra laikā būs pieejams gan garšīgs ēdiens, gan dažādi atspirdzinoši dzērieni.' },
   ];
@@ -24,7 +24,7 @@ export default function MatchDayExperience() {
 
 <br /> <br />Vecākiem būs iespēja atpūsties un izbaudīt dažādus kulinārijas gardumus, kamēr bērni izklaidēsies piedāvātajās aktivitātēs. Dienas gaitā norisināsies dažādi izklaides pasākumi, kas katru festivāla apmeklētāju padarīs par daļu no Cēzara Kausa burvības.
 <br /> <br />
-Un tas vēl nav viss. 26. jūlijs ir arī Gulbenes pilsētas svētku diena, kas nozīmē, ka visi turnīra dalībnieki un apmeklētāji lapini aicināti piedalīties pilsētas piedāvātajos pasākumos, koncertos un tirdziņos.
+Un tas vēl nav viss. 25. jūlijs ir arī Gulbenes pilsētas svētku diena, kas nozīmē, ka visi turnīra dalībnieki un apmeklētāji laipni aicināti piedalīties pilsētas piedāvātajos pasākumos, koncertos un tirdziņos.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ export default function HallOfFame() {
     {
       year: 2025,
       team: 'Balvu Sporta Centrs',
-      image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=600',
+      image: '/images/balvi_winners.webp',
       finalScore: '1 - 0',
       penalties: '3 - 1',
       second: 'FC Pārgauja',
