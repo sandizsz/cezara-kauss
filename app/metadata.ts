@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear();
 export const siteMetadata: Metadata = {
   metadataBase: new URL("https://cezarakauss.lv"),
   title: `Cēzara kauss ${currentYear} | Futbola Turnīrs`,
-  description: `Piesakies prestižajam futbola turnīram Cēzara kauss ${currentYear}. Reģistrē savu komandu un piedalies cīņā par trofeju!`,
+  description: `Piesakies amatieru futbola turnīram Cēzara kauss ${currentYear}. Reģistrē savu komandu un piedalies cīņā par trofeju!`,
   keywords: [
     "Cēzara kauss",
     "futbola turnīrs",
@@ -23,7 +23,7 @@ export const siteMetadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/hero_image.webp",
         width: 1200,
         height: 630,
         alt: "Cēzara kauss futbola turnīrs",
@@ -33,8 +33,8 @@ export const siteMetadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `Cēzara kauss ${currentYear} | Futbola Turnīrs`,
-    description: `Piesakies prestižajam futbola turnīram Cēzara kauss ${currentYear}.`,
-    images: ["/og-image.jpg"],
+    description: `Piesakies amatieru futbola turnīram Cēzara kauss ${currentYear}.`,
+    images: ["/images/hero_image.webp"],
   },
   robots: {
     index: true,

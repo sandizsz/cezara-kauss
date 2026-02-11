@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/reglaments", label: "Reglaments" },
 ];
 
-const LOGO_URL = "/images/CezaraKauss-2025-1536x1536.webp";
+const LOGO_URL = "/images/2026cezara_logo.svg";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
