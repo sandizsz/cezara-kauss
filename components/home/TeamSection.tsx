@@ -15,22 +15,22 @@ const team = [
   {
     name: "Arita Klesmane",
     role: "Sabiedriskās attiecības",
-    image: "/images/team/aritav2.png",
+    image: "/images/team/aritav2.webp",
   },
   {
     name: "Sandis Sirmais",
     role: "Mārketings & IT",
-    image: "/images/team/Sandis.png",
+    image: "/images/team/sandis.webp",
   },
   {
     name: "Jānis Stībelis",
     role: "DJ / Atmosfēra",
-    image: "/images/team/JanisStibelis.png",
+    image: "/images/team/JanisStibelis.webp",
   },
   {
     name: "Artēmijs Semjonovs",
     role: "Galvenais runasvīrs",
-    image: "/images/team/sems.png",
+    image: "/images/team/sems.webp",
   },
   
 ];

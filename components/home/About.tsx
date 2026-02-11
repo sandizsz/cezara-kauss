@@ -36,7 +36,7 @@ export default function About() {
                   <Icon className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
                 </div>
                 <span className="text-[12px] md:text-[14px] text-zinc-500 font-extrabold tracking-widest mb-1 md:mb-2 block">{card.title}</span>
-                <h3 className="font-display text-2xl sm:text-3xl md:text-5xl text-white mb-1">{card.detail}</h3>
+                <h3 className="font-display text-2xl sm:text-3xl md:text-5xl text-white">{card.detail}</h3>
                 <p className="text-cesar-gold font-bold text-[14px] md:text-[16px] uppercase tracking-widest">{card.sub}</p>
               </div>
             );
