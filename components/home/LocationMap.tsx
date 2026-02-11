@@ -12,7 +12,7 @@ export default function LocationMap() {
                  <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed mx-auto max-w-4xl">
 
 
-           Amatieru futbola turnīrs “Cēzara Kauss ” tradicionāli norisinās pilsētas svētku laikā Gulbenē, Gulbenes pilsētas stadionā. Stadionam ir 1500 sēdvietu kapacitāte, kas nodrošina pietiekami daudz vietas skatītājiem, lai baudītu spēles ērtā un draudzīgā atmosfērā. Ap stadionu būs pieejamas bezmaksas stāvvietas, kur dalībnieki un apmeklētāji varēs novietot savus auto. Visas turnīra spēles tiks aizvadītas uz dabīgā zāliena, tāpēc aicinām dalībniekus izvēlēties piemērotus futbola apavus. <br/> <br />
+           Amatieru futbola turnīrs “Cēzara kauss” tradicionāli norisinās pilsētas svētku laikā Gulbenē, Gulbenes pilsētas stadionā. Stadionam ir 1500 sēdvietu kapacitāte, kas nodrošina pietiekami daudz vietas skatītājiem, lai baudītu spēles ērtā un draudzīgā atmosfērā. Ap stadionu būs pieejamas bezmaksas stāvvietas, kur dalībnieki un apmeklētāji varēs novietot savus auto. Visas turnīra spēles tiks aizvadītas uz dabīgā zāliena, tāpēc aicinām dalībniekus izvēlēties piemērotus futbola apavus. <br/> <br />
 
 Gulbene ir fantastiska pilsēta ko noteikti vērts aplūkot un iepazīt, tāpēc, ja vēlies ierasties uz turnīru dienu ātrāk un pabaudīt svētku atmosfēru pilsētā, vai uzkavēties pilsētā arī pēc turnīra, vakarā apmeklējot kādu koncertu, noteikti dodies uz <a href="https://visitgulbene.lv" target="_blank" rel="noopener noreferrer" className="text-cesar-gold hover:underline">visitgulbene.lv</a> mājaslapu. Tur tu atradīsi gan vietas, kur garšīgi paēst, gan interesantus apskates objektus un naktsmājas.
 

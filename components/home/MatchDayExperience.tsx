@@ -20,9 +20,9 @@ export default function MatchDayExperience() {
             </h2>
           </div>
           <p className="max-w-md text-zinc-400 font-medium leading-relaxed">
-            Cēzara Kauss ir ne tikai par futbolu, bet arī par kopienu un labi pavadītu laiku. Spēļu starplaikos apmeklētāji varēs izbaudīt svētku atmosfēru. Ģimenēm ar bērniem būs iespēja piedalīties dažādās aktivitātēs.
+            Cēzara kauss ir ne tikai par futbolu, bet arī par kopienu un labi pavadītu laiku. Spēļu starplaikos apmeklētāji varēs izbaudīt svētku atmosfēru. Ģimenēm ar bērniem būs iespēja piedalīties dažādās aktivitātēs.
 
-<br /> <br />Vecākiem būs iespēja atpūsties un izbaudīt dažādus kulinārijas gardumus, kamēr bērni izklaidēsies piedāvātajās aktivitātēs. Dienas gaitā norisināsies dažādi izklaides pasākumi, kas katru festivāla apmeklētāju padarīs par daļu no Cēzara Kausa burvības.
+<br /> <br />Vecākiem būs iespēja atpūsties un izbaudīt dažādus kulinārijas gardumus, kamēr bērni izklaidēsies piedāvātajās aktivitātēs. Dienas gaitā norisināsies dažādi izklaides pasākumi, kas katru festivāla apmeklētāju padarīs par daļu no Cēzara kausa burvības.
 <br /> <br />
 Un tas vēl nav viss. 25. jūlijs ir arī Gulbenes pilsētas svētku diena, kas nozīmē, ka visi turnīra dalībnieki un apmeklētāji laipni aicināti piedalīties pilsētas piedāvātajos pasākumos, koncertos un tirdziņos.
           </p>
