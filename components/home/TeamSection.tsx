@@ -20,7 +20,7 @@ const team = [
   {
     name: "Sandis Sirmais",
     role: "Mārketings & IT",
-    image: "/images/team/sandis.png",
+    image: "/images/team/Sandis.png",
   },
   {
     name: "Jānis Stībelis",
