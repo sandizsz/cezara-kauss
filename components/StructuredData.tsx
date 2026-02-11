@@ -1,21 +1,21 @@
 export default function StructuredData() {
+  const currentYear = new Date().getFullYear();
   const eventData = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
-    name: "Cēzara kauss 2026",
+    name: `Cēzara kauss ${currentYear}`,
     description:
       "Prestižs futbola turnīrs Latvijā. Piesakiet savu komandu un cīnieties par trofeju!",
-    startDate: "2026-07-25T09:00:00+03:00",
-    endDate: "2026-07-25T20:00:00+03:00",
+    startDate: `${currentYear}-06-15T09:00:00+03:00`,
+    endDate: `${currentYear}-06-15T20:00:00+03:00`,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     location: {
       "@type": "Place",
-      name: "Gulbenes pilsētas stadions",
+      name: "Futbola stadions",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "O. Kalpaka iela 1A",
-        addressLocality: "Gulbene",
+        addressLocality: "Rīga",
         addressCountry: "LV",
       },
     },
@@ -23,6 +23,12 @@ export default function StructuredData() {
       "@type": "Organization",
       name: "Cēzara kauss",
       url: "https://cezarakauss.lv",
+    },
+    offers: {
+      "@type": "Offer",
+      url: "https://cezarakauss.lv#registracija",
+      availability: "https://schema.org/InStock",
+      validFrom: `${currentYear}-01-01`,
     },
     sport: "Football",
     inLanguage: "lv",

@@ -82,7 +82,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 mt-16 md:mt-20 pt-8 md:pt-12 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-zinc-700 text-xs uppercase font-bold tracking-[0.3em]">
-          © 2026 Cēzara Kauss.
+          © {new Date().getFullYear()} Cēzara Kauss.
         </p>
         <p className="text-zinc-700 text-xs uppercase font-bold tracking-[0.3em]">
           Est. 2024 Gulbene

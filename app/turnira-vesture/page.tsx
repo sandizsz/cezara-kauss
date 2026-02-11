@@ -6,15 +6,15 @@ import Footer from "@/components/layout/Footer";
 import VestureHero from "@/components/vesture/VestureHero";
 import YearSection from "@/components/vesture/YearSection";
 
+const currentYear = new Date().getFullYear();
+
 export const metadata: Metadata = {
-  title: "Turnīra Vēsture | Cēzara Kauss",
-  description:
-    "Cēzara Kauss futbola turnīra vēsture — rezultāti, foto galerija, statistika un komandas no visiem turnīriem kopš 2024. gada.",
+  title: `Turnīra Vēsture | Cēzara Kauss ${currentYear}`,
+  description: `Cēzara Kauss futbola turnīra vēsture — rezultāti, foto galerija, statistika un komandas no visiem turnīriem kopš 2024. gada.`,
   keywords: [
     "Cēzara kauss vēsture",
     "futbola turnīrs rezultāti",
-    "Cēzara kauss 2024",
-    "Cēzara kauss 2025",
+    `Cēzara kauss ${currentYear}`,
     "futbola turnīrs Gulbenē",
     "turnīra foto",
   ],
