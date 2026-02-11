@@ -26,6 +26,21 @@ export const metadata: Metadata = {
     siteName: "Cēzara kauss",
     locale: "lv_LV",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cēzara Kauss turnīra vēsture",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Turnīra Vēsture | Cēzara Kauss",
+    description:
+      "Rezultāti, foto galerija un statistika no visiem Cēzara Kauss turnīriem.",
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "https://cezarakauss.lv/turnira-vesture",

@@ -2,19 +2,20 @@ export default function StructuredData() {
   const eventData = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
-    name: "Cēzara kauss 2025",
+    name: "Cēzara kauss 2026",
     description:
       "Prestižs futbola turnīrs Latvijā. Piesakiet savu komandu un cīnieties par trofeju!",
-    startDate: "2025-06-15T09:00:00+03:00",
-    endDate: "2025-06-15T20:00:00+03:00",
+    startDate: "2026-07-25T09:00:00+03:00",
+    endDate: "2026-07-25T20:00:00+03:00",
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     location: {
       "@type": "Place",
-      name: "Futbola stadions",
+      name: "Gulbenes pilsētas stadions",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Rīga",
+        streetAddress: "O. Kalpaka iela 1A",
+        addressLocality: "Gulbene",
         addressCountry: "LV",
       },
     },
@@ -25,9 +26,9 @@ export default function StructuredData() {
     },
     offers: {
       "@type": "Offer",
-      url: "https://cezarakauss.lv#registracija",
+      url: "https://cezarakauss.lv/registret-komandu",
       availability: "https://schema.org/InStock",
-      validFrom: "2025-01-01",
+      validFrom: "2026-01-01",
     },
     sport: "Football",
     inLanguage: "lv",
