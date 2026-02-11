@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/balvi_winners.webp",
         width: 1200,
         height: 630,
         alt: "Cēzara Kauss turnīra vēsture",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Turnīra Vēsture | Cēzara Kauss",
     description:
       "Rezultāti, foto galerija un statistika no visiem Cēzara Kauss turnīriem.",
-    images: ["/og-image.jpg"],
+    images: ["/images/balvi_winners.webp"],
   },
   alternates: {
     canonical: "https://cezarakauss.lv/turnira-vesture",

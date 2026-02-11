@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/turnira_reglaments.webp",
         width: 1200,
         height: 630,
         alt: "Cēzara kauss turnīra reglaments",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Turnīra Reglaments | Cēzara kauss",
     description:
       "Cēzara kauss futbola turnīra oficiālais reglaments — noteikumi un norises kārtība.",
-    images: ["/og-image.jpg"],
+    images: ["/images/turnira_reglaments.webp"],
   },
   alternates: {
     canonical: "https://cezarakauss.lv/reglaments",
@@ -209,7 +209,7 @@ export default function ReglamentsPage() {
         <section className="relative bg-black pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-fixed opacity-30"
-            style={{ backgroundImage: "url('/images/minifutbola turnīrs Cēzara kauss.webp')" }}
+            style={{ backgroundImage: "url('/images/turnira_reglaments.webp')" }}
           />
           <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center text-white">

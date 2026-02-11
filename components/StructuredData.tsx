@@ -24,12 +24,6 @@ export default function StructuredData() {
       name: "Cēzara kauss",
       url: "https://cezarakauss.lv",
     },
-    offers: {
-      "@type": "Offer",
-      url: "https://cezarakauss.lv/registret-komandu",
-      availability: "https://schema.org/InStock",
-      validFrom: "2026-01-01",
-    },
     sport: "Football",
     inLanguage: "lv",
     image: "https://cezarakauss.lv/og-image.jpg",
