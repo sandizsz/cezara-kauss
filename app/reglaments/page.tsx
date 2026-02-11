@@ -60,7 +60,7 @@ const sections = [
   {
     title: "3. TURNĪRA NORISES VIETA UN LAIKS",
     items: [
-      '3.1. "Cēzara kauss" norisināsies 2026.gada 25.jūlijā, Gulbenes pilsētas stadionā, O.Kalpaka iela 1a.',
+      '3.1. "Cēzara kauss" norisinās 2026.gada 25.jūlijā, Gulbenes pilsētas stadionā, O.Kalpaka iela 1a.',
     ],
   },
   {
@@ -68,14 +68,13 @@ const sections = [
     items: [
       '4.1 Turnīrā "Cēzara kauss" var piedalīties jebkura komanda, kas apņemas ievērot un pildīt Reglamenta nosacījumus;',
       "4.2 Vienas komandas sastāvā turnīrā drīkst pieteikt 10(!) spēlētājus;",
-      "4.3 Spēlētājiem jābūt sasniegušiem 15 gadu vecumu (ne jaunākiem kā 2009 gadā dzimušie);",
+      "4.3 Spēlētājiem jābūt sasniegušiem 15 gadu vecumu (ne jaunākiem kā 2011.gadā dzimušie);",
       "4.4 Spēlētāji ir vienlīdz atbildīgi par savas komandas katra spēlētāja iesniegto informāciju. Katrs dalībnieks, piesakoties turnīram apstiprina savu personas datu apstrādi balstoties uz fizisko personu datu aizsardzības likuma 7.1. pantu;",
       "4.5 Organizatori patur tiesības pieņemt galējo lēmumu par komandas vai atsevišķa spēlētāja pielaišanu pie spēlēšanas turnīrā, ja tiek konstatēta reglamenta neatbilstība vai tā pārkāpums vai kāds cits apstāklis, kas organizatoram liekas aizdomīgs vai nepieņemams;",
       "4.6 Ja turnīra norises laikā organizators atklāj un konstatē faktu par nepatiesi sniegtu informāciju, no turnīra tiek diskvalificēta visa komanda, kā arī tiek anulēti visi rezultāti;",
       "4.7 Katrai komandai ir jābūt vienādas krāsas krekliem ar numuriem, vārtsarga krekla krāsai jābūt atšķirīgai no laukuma spēlētājiem;",
       "4.8 Spēlētājs turnīra drīkst piedalīties tikai vienas komandas sastāvā;",
-      "4.9 Izmaiņas komandu sastāvā var veikt līdz 20. jūlijam, saskaņojot to ar organizatoriem e-pastā;",
-      '4.10 Komanda var atsaukt savu dalību turnīrā. Šādā gadījumā komandas vietu ieņem pirmā komanda no "gaidīšanas saraksta". Dalības atsaukšanas gadījumā dalības maksa atmaksāta netiek.'
+      '4.9 Komanda var atsaukt savu dalību turnīrā. Šādā gadījumā komandas vietu ieņem pirmā komanda no "gaidīšanas saraksta". Dalības atsaukšanas gadījumā dalības maksa atmaksāta netiek.'
     ],
   },
   {
@@ -115,7 +114,7 @@ const sections = [
   {
     title: "7. PROTESTS",
     items: [
-      '7.1 Protests iesniedzams rakstiski "Cēzara kauss " galvenajam tiesnesim pusstundas laikā pēc spēles beigu signāla;',
+      '7.1 Protests iesniedzams rakstiski "Cēzara kauss" galvenajam tiesnesim pusstundas laikā pēc spēles beigu signāla;',
       "7.2 Protestus nepieņem par spēles laiku, 6 m un 10 m soda sitieniem, ieskaitītiem vai neieskaitītiem vārtiem;",
       "7.3 Iesniegtos protestus izskata komiteja trīs cilvēku sastāvā. Komitejā ietilpst galvenais tiesnesis un divi turnīra galvenie organizatori.",
     ],
@@ -142,7 +141,7 @@ const sections = [
     items: [
       '9.2 Par spļaušanu personai, "pēdējās cerības" sodu, tīšu speršanu, mešanu ar priekšmetu kādam, tīšu sitienu un abpusēju rupjību – noraidījums un jāizlaiž nākamā spēle (ja pārkāpums nav īpaši rupjš). Par šāda veida atkārtotu pārkāpumu diskvalifikācija uz visu turnīru. Par īpaši rupju pārkāpumu vai kautiņa izraisīšanu spēlētājam tiek liegta iespēja piedalīties nākamajos turnīros;',
       "9.3 Par tiesnešu apvainošanu vai uzbrukumu tiesnesim un par izteikti rupju spēli ar nodomu traumēt pretinieku – noraidījums un jāizlaiž nākamās trīs spēles. Par šāda veida atkārtotu pārkāpumu disvalifikācija uz visu turnīru;",
-      '9.4 "Cēzara kauss " organizatoriem ir tiesības pieņemt atsevišķus lēmumus par konkrēta futbolista, pārstāvja vai visas komandas soda apmēriem;',
+      '9.4 "Cēzara kauss" organizatoriem ir tiesības pieņemt atsevišķus lēmumus par konkrēta futbolista, pārstāvja vai visas komandas soda apmēriem;',
       "9.5 Ja komanda jebkādu iemeslu dēļ nevar uzsākt spēli laikus, tās komandas pārstāvim, kas reģistrēts komandas pieteikumā, ir jābrīdina čempionāta galvenais tiesnesis ne vēlāk kā 20 minūtes pirms plānotā mača sākuma. Tiesnesis var atlikt spēli maksimums uz 10 minūtēm;",
       "9.6 Par spēlētāja, kurš nav iekļauts protokolā, piedalīšanos spēlē, komandai tiek piešķirts tehniskais zaudējums 0:3.",
       "9.7 Ja komanda izstājas no turnīra, nenospēlējot visas savas spēles, komandai tiek liegta dalība nākamā gada turnīrā.",
@@ -162,7 +161,7 @@ const sections = [
     items: [
       "11.1 Turnīra pirmās 3 (trīs) vietas ieguvušās komandas tiek apbalvotas ar organizatora noteiktām balvām;",
       "11.2 Organizatoriem ir tiesības piešķirt citas speciālās balvas;",
-      "11.3 Tiek apbalvots visa turnīra rezultatīvākais spēlētājs, labākais vārtsargs, labākais aizsargs.",
+      "11.3 Tiek apbalvots visa turnīra fināla labākais spēlētājs (MVP), turnīra labākais uzbrucējs, turnīra labākais vārtsargs un turnīra labākais aizsargs.",
     ],
   },
 ];
