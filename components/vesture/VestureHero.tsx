@@ -5,7 +5,7 @@ export default function VestureHero() {
     <section className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
       {/* Background image with overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: "url('/images/balvi_winners.webp')" }}
       />
       <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black" />

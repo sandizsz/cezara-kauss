@@ -122,7 +122,7 @@ export default function RegistrationForm() {
         </div>
         <div className="flex flex-row md:flex-col items-center md:items-end gap-3 md:gap-2 bg-black px-5 py-4 md:p-8 border-b-8 border-cesar-gold">
           <span className="text-zinc-500 font-extrabold text-[9px] md:text-[10px] uppercase tracking-widest">DALĪBAS MAKSA</span>
-          <span className="text-3xl md:text-6xl font-display text-cesar-gold leading-none">€100.00</span>
+          <span className="text-3xl md:text-6xl font-display text-cesar-gold leading-none">€150.00</span>
         </div>
       </div>
 

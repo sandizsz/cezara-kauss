@@ -5,7 +5,7 @@ export default function About() {
     { icon: CalendarDays, title: "DATUMS", detail: "25. JŪLIJS", sub: "2026. GADS" },
     { icon: MapPin, title: "VIETA", detail: "GULBENES Pilsētas Stadions", sub: "O. KALPAKA IELA 1A" },
     { icon: Users, title: "FORMĀTS", detail: "5 x 5", sub: "Dinamisks turnīra formāts" },
-    { icon: Trophy, title: "DALĪBAS MAKSA", detail: "€100", sub: "No komandas" },
+    { icon: Trophy, title: "DALĪBAS MAKSA", detail: "€150", sub: "No komandas" },
   ];
 
   return (

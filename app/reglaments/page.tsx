@@ -208,7 +208,7 @@ export default function ReglamentsPage() {
         {/* Hero */}
         <section className="relative bg-black pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-fixed opacity-30"
+            className="absolute inset-0 bg-cover bg-center opacity-30"
             style={{ backgroundImage: "url('/images/turnira_reglaments.webp')" }}
           />
           <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black" />
