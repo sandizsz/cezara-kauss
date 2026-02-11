@@ -166,7 +166,7 @@ export default function RegistrationForm() {
                   placeholder="+371 2000 0000"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-base md:text-lg text-black focus:outline-none focus:border-cesar-gold transition-all"
+                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-base md:text-lg text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase"
                 />
               </div>
               <div className="space-y-2">
@@ -177,7 +177,7 @@ export default function RegistrationForm() {
                   placeholder="EMAIL@DOMAIN.LV"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-base md:text-lg text-black focus:outline-none focus:border-cesar-gold transition-all uppercase"
+                  className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-base md:text-lg text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase"
                 />
               </div>
             </div>
@@ -236,7 +236,7 @@ export default function RegistrationForm() {
                 value={formData.comment}
                 onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
                 rows={3}
-                className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-sm md:text-base text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase resize-none"
+                className="w-full bg-stadium-gray border-b-4 border-zinc-200 p-4 md:p-6 font-bold text-base md:text-lg text-black focus:outline-none focus:border-cesar-gold transition-all placeholder-zinc-200 uppercase"
               />
             </div>
 
