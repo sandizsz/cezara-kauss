@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -18,6 +18,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = siteMetadata;
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+};
 
 export default function RootLayout({
   children,

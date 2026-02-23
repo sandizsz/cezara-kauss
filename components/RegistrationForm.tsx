@@ -84,6 +84,23 @@ export default function RegistrationForm() {
     }
   };
 
+  // Registration temporarily closed
+  return (
+    <section id="registracija" className="pt-28 pb-20 md:pt-40 md:pb-32 max-w-4xl mx-auto px-4 md:px-6 text-center animate-fade-in">
+      <div className="bg-black w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mx-auto mb-8 md:mb-12 rounded-full border-4 border-cesar-gold">
+        <svg className="w-10 h-10 md:w-12 md:h-12 text-cesar-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h2 className="text-5xl md:text-8xl font-display font-bold text-black mb-4 md:mb-6 uppercase tracking-normal" style={{ lineHeight: '0.9' }}>
+        REĢISTRĀCIJA JAU <span className="gold-text-gradient">  DRĪZUMĀ!</span>
+      </h2>
+      <p className="text-zinc-500 font-bold text-xs md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] mt-6 md:mt-10">
+        Reģistrācija tiks atvērta jau drīzumā!
+      </p>
+    </section>
+  );
+
   if (isSubmitted) {
     return (
       <section id="registracija" className="pt-28 pb-20 md:pt-40 md:pb-32 max-w-4xl mx-auto px-4 md:px-6 text-center animate-fade-in">
@@ -194,11 +211,11 @@ export default function RegistrationForm() {
               />
               {logoPreview ? (
                 <div className="flex items-center gap-4 bg-stadium-gray p-4 border-b-4 border-zinc-200">
-                  <img src={logoPreview} alt="Logo preview" className="w-16 h-16 md:w-20 md:h-20 object-contain rounded-sm" />
+                  <img src={logoPreview ?? undefined} alt="Logo preview" className="w-16 h-16 md:w-20 md:h-20 object-contain rounded-sm" />
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-bold text-black truncate">{logoFile?.name}</p>
                     <p className="text-[10px] text-zinc-400 font-bold">
-                      {logoFile && (logoFile.size / 1024 / 1024).toFixed(2)} MB
+                      {logoFile ? `${(logoFile!.size / 1024 / 1024).toFixed(2)} MB` : null}
                     </p>
                   </div>
                   <button
