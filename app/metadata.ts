@@ -36,6 +36,18 @@ export const siteMetadata: Metadata = {
     description: `Piesakies amatieru futbola turnīram Cēzara kauss ${currentYear}.`,
     images: ["/images/hero_image.webp"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "Cēzara Kauss",
+  },
   robots: {
     index: true,
     follow: true,
