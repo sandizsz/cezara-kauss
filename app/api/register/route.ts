@@ -107,7 +107,7 @@ async function sendConfirmationEmail(data: {
     html: `
       <div style="font-family:sans-serif;max-width:600px;color:#333;line-height:1.7;">
         <p>Paldies, ka reģistrējāt savu komandu turnīram <strong>Cēzara Kauss</strong>.</p>
-        <p>Lūgums veikt apmaksu uz norādīto konta numuru, maksājuma mērķī norādot savas komandas nosaukumu, valsti un pilsētu no kuras pārstāvēta komanda, lai varam Jūs veiksmīgi apstiprināt turnīram:</p>
+        <p>Lūgums veikt apmaksu uz norādīto konta numuru, maksājuma mērķī norādot savas komandas nosaukumu un pilsētu no kuras pārstāvēta komanda, lai varam Jūs veiksmīgi apstiprināt turnīram:</p>
 
         <div style="background:#f7f7f7;padding:20px;margin:20px 0;border-left:4px solid #c9a227;">
           <p style="margin:0 0 4px;font-weight:bold;font-size:13px;color:#888;text-transform:uppercase;letter-spacing:1px;">Maksājuma detaļas:</p>
@@ -115,7 +115,7 @@ async function sendConfirmationEmail(data: {
           <p style="margin:4px 0;">Reģ. nr. 40008347731</p>
           <p style="margin:4px 0;">LV42HABA0551061679039</p>
           <br/>
-          <p style="margin:4px 0;"><strong>Dalības maksa — 100 EUR</strong></p>
+          <p style="margin:4px 0;"><strong>Dalības maksa — 150 EUR</strong></p>
         </div>
 
         <p>Komandas pēc pieteikuma nosūtīšanas saņem apstiprinājumu e-pastā un <strong>3 kalendāro dienu laikā</strong> veic dalības maksas pārskaitījumu. Ja pārskaitījums netiek veikts, komandas pieteikums tiek uzskatīts par atsauktu un tiek anulēts. Saņemot pārskaitījumu, komanda tiek iekļauta dalībnieku sarakstā. Apstiprināto komandu iekļaušana dalībnieku sarakstā notiek katru dienu pēc plkst. 18.00;</p>
