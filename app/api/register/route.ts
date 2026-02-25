@@ -111,9 +111,9 @@ async function sendConfirmationEmail(data: {
 
         <div style="background:#f7f7f7;padding:20px;margin:20px 0;border-left:4px solid #c9a227;">
           <p style="margin:0 0 4px;font-weight:bold;font-size:13px;color:#888;text-transform:uppercase;letter-spacing:1px;">Maksājuma detaļas:</p>
-          <p style="margin:4px 0;"><strong>ARTURS DEKSNIS</strong></p>
-          <p style="margin:4px 0;">LT843250090083592231</p>
-          <p style="margin:4px 0;">REVOLT21</p>
+          <p style="margin:4px 0;"><strong>Biedrība "FUTBOLS GULBENĒ"</strong></p>
+          <p style="margin:4px 0;">Reģ. nr. 40008347731</p>
+          <p style="margin:4px 0;">LV42HABA0551061679039</p>
           <br/>
           <p style="margin:4px 0;"><strong>Dalības maksa — 100 EUR</strong></p>
         </div>
