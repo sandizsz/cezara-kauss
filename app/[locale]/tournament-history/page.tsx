@@ -1,0 +1,64 @@
+import { Metadata } from 'next';
+import { tournamentHistory } from '@/data/tournament-history';
+import { getYearPhotos } from '@/data/get-year-photos';
+import Navigation from '@/components/layout/Navigation';
+import Footer from '@/components/layout/Footer';
+import VestureHero from '@/components/vesture/VestureHero';
+import YearSection from '@/components/vesture/YearSection';
+
+export const metadata: Metadata = {
+  title: 'Turnīra Vēsture | Cēzara Kauss',
+  description: 'Cēzara Kauss futbola turnīra vēsture — rezultāti, foto galerija un statistika.',
+};
+
+export default function TournamentHistoryPage() {
+  return (
+    <>
+      <Navigation />
+      <main>
+        <VestureHero />
+        <div className="bg-black">
+          {tournamentHistory.map((yearData, i) => (
+            <div key={yearData.year}>
+              <YearSection data={yearData} photos={getYearPhotos(yearData.year)} />
+              {i < tournamentHistory.length - 1 && (
+                <div className="max-w-6xl mx-auto px-4 md:px-6">
+                  <div className="h-px bg-linear-to-r from-transparent via-cesar-gold/40 to-transparent" />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        {tournamentHistory.map((yearData) => (
+          <script
+            key={`ld-${yearData.year}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'SportsEvent',
+                name: `Cēzara Kauss ${yearData.year}`,
+                description: `Futbola turnīrs Cēzara Kauss ${yearData.year}`,
+                startDate: `${yearData.year}-07-26`,
+                location: {
+                  '@type': 'Place',
+                  name: 'Gulbenes Pilsētas Stadions',
+                  address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: 'O. Kalpaka iela 1A',
+                    addressLocality: 'Gulbene',
+                    addressCountry: 'LV',
+                  },
+                },
+                organizer: { '@type': 'Organization', name: 'Cēzara Kauss', url: 'https://cezarakauss.lv' },
+                sport: 'Football',
+                inLanguage: 'lv',
+              }),
+            }}
+          />
+        ))}
+      </main>
+      <Footer />
+    </>
+  );
+}
