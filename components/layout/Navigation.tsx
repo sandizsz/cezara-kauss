@@ -75,7 +75,7 @@ function LanguageDropdown({ onSwitch }: { onSwitch?: () => void }) {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 bg-white border border-zinc-200 shadow-md z-50">
+        <div className="absolute right-0 top-full mt-2 bg-white shadow-md z-50">
           <button
             onClick={() => handleSwitch(other)}
             className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-zinc-50 transition-colors"
