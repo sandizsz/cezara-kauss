@@ -75,20 +75,15 @@ function LanguageDropdown({ onSwitch }: { onSwitch?: () => void }) {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-3 bg-black border-b-4 border-cesar-gold shadow-xl z-50 min-w-[140px]">
+        <div className="absolute right-0 top-full mt-2 bg-white border border-zinc-200 shadow-md z-50">
           <button
             onClick={() => handleSwitch(other)}
-            className="flex items-center gap-3 w-full px-4 py-3.5 group/item hover:bg-zinc-900 transition-colors"
+            className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-zinc-50 transition-colors"
           >
             {FLAGS[other]}
-            <div className="text-left">
-              <span className="block text-[10px] font-black tracking-[0.2em] uppercase text-zinc-400 group-hover/item:text-cesar-gold transition-colors">
-                {LOCALE_META[other].code}
-              </span>
-              <span className="block text-[9px] font-bold tracking-wider text-zinc-600 uppercase">
-                {LOCALE_META[other].name}
-              </span>
-            </div>
+            <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-500 hover:text-black">
+              {LOCALE_META[other].code}
+            </span>
           </button>
         </div>
       )}
