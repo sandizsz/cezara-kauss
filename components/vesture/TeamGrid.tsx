@@ -1,13 +1,14 @@
 type TeamGridProps = {
   teams: string[];
   winnerName: string;
+  sectionLabel: string;
 };
 
-export default function TeamGrid({ teams, winnerName }: TeamGridProps) {
+export default function TeamGrid({ teams, winnerName, sectionLabel }: TeamGridProps) {
   return (
     <div className="mb-10 md:mb-16">
       <h3 className="text-[10px] md:text-xs text-zinc-500 font-extrabold tracking-[0.3em] uppercase mb-6 md:mb-8 text-center">
-        Dalībnieki
+        {sectionLabel}
       </h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 max-w-3xl mx-auto">
         {teams.map((team, i) => {

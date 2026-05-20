@@ -1,11 +1,14 @@
+import { getTranslations } from "next-intl/server";
 import { CalendarDays, MapPin, Users, Trophy, type LucideIcon } from "lucide-react";
 
-export default function About() {
+export default async function About() {
+  const t = await getTranslations("about");
+
   const cards: { icon: LucideIcon; title: string; detail: string; sub: string }[] = [
-    { icon: CalendarDays, title: "DATUMS", detail: "25. JŪLIJS", sub: "2026. GADS" },
-    { icon: MapPin, title: "VIETA", detail: "GULBENES Pilsētas Stadions", sub: "O. KALPAKA IELA 1A" },
-    { icon: Users, title: "FORMĀTS", detail: "5 x 5", sub: "Dinamisks turnīra formāts" },
-    { icon: Trophy, title: "DALĪBAS MAKSA", detail: "€150", sub: "No komandas" },
+    { icon: CalendarDays, title: t("dateLabel"), detail: t("dateValue"), sub: t("dateSub") },
+    { icon: MapPin, title: t("locationLabel"), detail: t("locationValue"), sub: t("locationSub") },
+    { icon: Users, title: t("formatLabel"), detail: t("formatValue"), sub: t("formatSub") },
+    { icon: Trophy, title: t("feeLabel"), detail: t("feeValue"), sub: t("feeSub") },
   ];
 
   return (
@@ -13,14 +16,14 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-6">
           <div>
-            <span className="section-label mb-4">Par futbola turnīru</span>
-            <h2 className="font-display text-5xl sm:text-7xl uppercase tracking-normal text-black mb-[-10px]" style={{ lineHeight: '0.9' }}>
-              KAS IR FUTBOLA TURNĪRS
- <br/><span className="gold-text-gradient">CĒZARA KAUSS?</span>
+            <span className="section-label mb-4">{t("sectionLabel")}</span>
+            <h2 className="font-display text-5xl sm:text-7xl uppercase tracking-normal text-black mb-[-10px]" style={{ lineHeight: "0.9" }}>
+              {t("title")}
+              <br /><span className="gold-text-gradient">{t("titleHighlight")}</span>
             </h2>
           </div>
           <p className="max-w-md text-zinc-500 font-medium leading-relaxed">
-            Cēzara kauss ir amatieru futbola turnīrs, kas savu debiju piedzīvoja 2024. gada 27. jūlijā, Gulbenes pilsētas svētku laikā. Šis turnīrs, kas ikgadu norisinās svētku atmosfērā, piedāvā aizraujošu dienu gan sporta faniem, gan ģimenēm ar bērniem. <br /> <br />
+            {t("description")}
           </p>
         </div>
 

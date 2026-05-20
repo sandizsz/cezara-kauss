@@ -1,12 +1,13 @@
 type YearStatsProps = {
   stats: { label: string; value: string }[];
+  sectionLabel: string;
 };
 
-export default function YearStats({ stats }: YearStatsProps) {
+export default function YearStats({ stats, sectionLabel }: YearStatsProps) {
   return (
     <div className="mb-10 md:mb-16">
       <h3 className="text-[10px] md:text-xs text-zinc-500 font-extrabold tracking-[0.3em] uppercase mb-6 md:mb-8 text-center">
-        Statistika
+        {sectionLabel}
       </h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-3xl mx-auto">
         {stats.map((stat, i) => (

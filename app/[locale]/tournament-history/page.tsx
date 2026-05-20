@@ -1,15 +1,43 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { tournamentHistory } from '@/data/tournament-history';
 import { getYearPhotos } from '@/data/get-year-photos';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import VestureHero from '@/components/vesture/VestureHero';
 import YearSection from '@/components/vesture/YearSection';
+import { routing } from '@/i18n/routing';
 
-export const metadata: Metadata = {
-  title: 'Turnīra Vēsture | Cēzara Kauss',
-  description: 'Cēzara Kauss futbola turnīra vēsture — rezultāti, foto galerija un statistika.',
-};
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'history' });
+
+  const canonical = locale === 'lv'
+    ? 'https://cezarakauss.lv/turnira-vesture'
+    : 'https://cezarakauss.lv/en/tournament-history';
+
+  return {
+    title: `${t('title')} ${t('titleHighlight')} | Cēzara Kauss`,
+    description: t('subtitle'),
+    alternates: {
+      canonical,
+      languages: {
+        lv: 'https://cezarakauss.lv/turnira-vesture',
+        en: 'https://cezarakauss.lv/en/tournament-history',
+      },
+    },
+    openGraph: {
+      locale: locale === 'lv' ? 'lv_LV' : 'en_US',
+      alternateLocale: locale === 'lv' ? 'en_US' : 'lv_LV',
+    },
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default function TournamentHistoryPage() {
   return (
