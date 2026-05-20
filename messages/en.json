@@ -9,7 +9,7 @@
   },
   "hero": {
     "tagline": "ARTŪRS DEKSNIS MEMORIAL TOURNAMENT",
-    "subtitle1": "More than a tournament — a true football celebration.",
+    "subtitle1": "More than a tournament - a true football celebration.",
     "subtitle2": "EMOTIONS. FRIENDS.",
     "subtitleHighlight": "FOOTBALL.",
     "ctaRegister": "Register your team",
@@ -63,15 +63,15 @@
     "sectionLabel": "101 reasons",
     "title": "WHY VISIT THE FOOTBALL TOURNAMENT",
     "titleHighlight": "CĒZARA KAUSS?",
-    "description": "Cēzara Kauss is not just about football — it is about community and a great time. During match breaks, visitors can enjoy a festive atmosphere. Families with children will have the opportunity to participate in various activities.\n\nParents will have the chance to relax and enjoy various culinary delights while children are entertained. Throughout the day, various entertainment events will take place that will make every festival visitor a part of the magic of Cēzara Kauss.\n\nAnd that is not all. July 25 is also Gulbene City Day, meaning all tournament participants and visitors are warmly invited to join the city's events, concerts and markets.",
+    "description": "Cēzara Kauss is not just about football - it is about community and a great time. During match breaks, visitors can enjoy a festive atmosphere. Families with children will have the opportunity to participate in various activities.\n\nParents will have the chance to relax and enjoy various culinary delights while children are entertained. Throughout the day, various entertainment events will take place that will make every festival visitor a part of the magic of Cēzara Kauss.\n\nAnd that is not all. July 25 is also Gulbene City Day, meaning all tournament participants and visitors are warmly invited to join the city's events, concerts and markets.",
     "features": [
       {
         "title": "Great atmosphere & music",
-        "desc": "We will create a great atmosphere at the stadium together — cheering for our own while having a wonderful time. DJ JVS will be responsible for the music throughout the entire day."
+        "desc": "We will create a great atmosphere at the stadium together - cheering for our own while having a wonderful time. DJ JVS will be responsible for the music throughout the entire day."
       },
       {
         "title": "Attractions for kids",
-        "desc": "Come with your family and do not worry about entertaining the younger ones — we will take care of that. Inflatable attractions, cotton candy, popcorn and other activities will be available all day."
+        "desc": "Come with your family and do not worry about entertaining the younger ones - we will take care of that. Inflatable attractions, cotton candy, popcorn and other activities will be available all day."
       },
       {
         "title": "Competitions for spectators",
@@ -87,13 +87,13 @@
     "sectionLabel": "Big Thanks",
     "title": "Tournament",
     "titleHighlight": "Sponsors",
-    "subtitle": "Without you this football tournament would not be possible — thank you for your trust and support!"
+    "subtitle": "Without you this football tournament would not be possible - thank you for your trust and support!"
   },
   "teamSection": {
     "sectionLabel": "#TEAMCEZARAKAUSS",
     "title": "Our",
     "titleHighlight": "Team",
-    "description": "We are local patriots with a global vision of what a modern football event should look like. Our team brings together organizers who care about the future of Latvian football and regional development.\n\nWe believe that great football starts right here — in local stadiums. Our driving force is the desire to prove that top-level organizational quality is possible anywhere in Latvia, if the right people with passion and the right attitude take on the work.",
+    "description": "We are local patriots with a global vision of what a modern football event should look like. Our team brings together organizers who care about the future of Latvian football and regional development.\n\nWe believe that great football starts right here - in local stadiums. Our driving force is the desire to prove that top-level organizational quality is possible anywhere in Latvia, if the right people with passion and the right attitude take on the work.",
     "alwaysWithUs": "Always with us",
     "roles": {
       "founder": "Founder",
@@ -121,7 +121,7 @@
   "video": {
     "title": "Video",
     "titleHighlight": "Highlights",
-    "subtitle": "If you want to experience it yourself — register your team and we will see you on July 25.",
+    "subtitle": "If you want to experience it yourself - register your team and we will see you on July 25.",
     "subtitleLinkText": "register your team"
   },
   "location": {
@@ -235,7 +235,7 @@
           "6.1 Teams compete in a two-phase tournament (group stage + playoff stage).",
           "6.2 Teams will be divided into groups. The top 2 teams from each group advance to the playoff stage.",
           "6.3 Team standings are determined by points (win – 3 pts, draw – 1 pt, loss – 0 pts).",
-          "6.4 In the playoff stage, draws are decided by penalty shoot-outs — 5 kicks per team.",
+          "6.4 In the playoff stage, draws are decided by penalty shoot-outs - 5 kicks per team.",
           "6.5 Match duration: 2 × 10 minutes.",
           "6.6 Players on the pitch: 5 (including goalkeeper), format is 5v5;",
           "6.7 Goal size: 3m × 2m;",
@@ -266,8 +266,8 @@
       {
         "title": "9. DISCIPLINARY RULES",
         "items": [
-          "9.2 For spitting, deliberate kicking or serious foul play — dismissal and suspension for the next match. Repeat offence: disqualification from the tournament;",
-          "9.3 For insulting a referee — dismissal and suspension for the next three matches;",
+          "9.2 For spitting, deliberate kicking or serious foul play - dismissal and suspension for the next match. Repeat offence: disqualification from the tournament;",
+          "9.3 For insulting a referee - dismissal and suspension for the next three matches;",
           "9.4 The Organisers reserve the right to impose individual disciplinary decisions;",
           "9.5 If a team cannot start on time, the team representative must notify the chief referee at least 20 minutes before kick-off;",
           "9.6 If an unlisted player participates, the team receives a technical defeat of 0:3.",
@@ -306,7 +306,7 @@
     "commentLabel": "COMMENT (OPTIONAL)",
     "commentPlaceholder": "ADDITIONAL INFORMATION...",
     "uploadButton": "UPLOAD LOGO",
-    "uploadTypes": "PNG, JPG, SVG — MAX 5MB",
+    "uploadTypes": "PNG, JPG, SVG - MAX 5MB",
     "submitButton": "SUBMIT APPLICATION",
     "submitting": "SUBMITTING...",
     "rulesTitle": "Rules",
