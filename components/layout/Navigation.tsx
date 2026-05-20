@@ -9,13 +9,13 @@ const LOGO_URL = "/images/2026cezara_logo.svg";
 
 const FLAGS: Record<string, ReactElement> = {
   lv: (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" className="w-5 h-4 rounded-sm shadow-sm">
-      <rect width="20" height="15" fill="#9E3039"/>
-      <rect y="5" width="20" height="5" fill="#fff"/>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 12" className="w-6 h-[15px] shrink-0" style={{ display: "block" }}>
+      <rect width="20" height="12" fill="#9E3039"/>
+      <rect y="4" width="20" height="4" fill="#fff"/>
     </svg>
   ),
   en: (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" className="w-5 h-4 rounded-sm shadow-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" className="w-6 h-[15px] shrink-0" style={{ display: "block" }}>
       <rect width="60" height="30" fill="#012169"/>
       <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
       <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" strokeWidth="4"/>
@@ -25,7 +25,10 @@ const FLAGS: Record<string, ReactElement> = {
   ),
 };
 
-const LOCALE_LABELS: Record<string, string> = { lv: "LV", en: "EN" };
+const LOCALE_META: Record<string, { code: string; name: string }> = {
+  lv: { code: "LV", name: "Latviešu" },
+  en: { code: "EN", name: "English" },
+};
 
 function LanguageDropdown({ onSwitch }: { onSwitch?: () => void }) {
   const locale = useLocale() as "lv" | "en";
@@ -54,31 +57,38 @@ function LanguageDropdown({ onSwitch }: { onSwitch?: () => void }) {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 px-2.5 py-1.5 border border-zinc-200 hover:border-cesar-gold/60 bg-white hover:bg-zinc-50 transition-all rounded-sm group"
+        className="flex items-center gap-2 py-1.5 group"
         aria-label="Switch language"
       >
-        {FLAGS[locale]}
-        <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-700 group-hover:text-black">
-          {LOCALE_LABELS[locale]}
+        <span className="flex items-center gap-2 border-b-2 border-transparent group-hover:border-cesar-gold pb-0.5 transition-all">
+          {FLAGS[locale]}
+          <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-400 group-hover:text-black transition-colors">
+            {LOCALE_META[locale].code}
+          </span>
         </span>
         <svg
-          className={`w-3 h-3 text-zinc-400 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          className={`w-2.5 h-2.5 text-zinc-300 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
           fill="none" stroke="currentColor" viewBox="0 0 24 24"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-1.5 bg-white border border-zinc-200 shadow-lg rounded-sm overflow-hidden z-50 min-w-[80px]">
+        <div className="absolute right-0 top-full mt-3 bg-black border-b-4 border-cesar-gold shadow-xl z-50 min-w-[140px]">
           <button
             onClick={() => handleSwitch(other)}
-            className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-zinc-50 hover:text-cesar-gold transition-colors"
+            className="flex items-center gap-3 w-full px-4 py-3.5 group/item hover:bg-zinc-900 transition-colors"
           >
             {FLAGS[other]}
-            <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-600">
-              {LOCALE_LABELS[other]}
-            </span>
+            <div className="text-left">
+              <span className="block text-[10px] font-black tracking-[0.2em] uppercase text-zinc-400 group-hover/item:text-cesar-gold transition-colors">
+                {LOCALE_META[other].code}
+              </span>
+              <span className="block text-[9px] font-bold tracking-wider text-zinc-600 uppercase">
+                {LOCALE_META[other].name}
+              </span>
+            </div>
           </button>
         </div>
       )}
