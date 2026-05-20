@@ -1,16 +1,93 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect, type ReactElement } from "react";
+import React from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter, usePathname } from "@/lib/navigation";
 
 const LOGO_URL = "/images/2026cezara_logo.svg";
 
-export default function Navigation() {
-  const t = useTranslations("nav");
-  const locale = useLocale();
+const FLAGS: Record<string, ReactElement> = {
+  lv: (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" className="w-5 h-4 rounded-sm shadow-sm">
+      <rect width="20" height="15" fill="#9E3039"/>
+      <rect y="5" width="20" height="5" fill="#fff"/>
+    </svg>
+  ),
+  en: (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" className="w-5 h-4 rounded-sm shadow-sm">
+      <rect width="60" height="30" fill="#012169"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" strokeWidth="4"/>
+      <path d="M30,0 V30 M0,15 H60" stroke="#fff" strokeWidth="10"/>
+      <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" strokeWidth="6"/>
+    </svg>
+  ),
+};
+
+const LOCALE_LABELS: Record<string, string> = { lv: "LV", en: "EN" };
+
+function LanguageDropdown({ onSwitch }: { onSwitch?: () => void }) {
+  const locale = useLocale() as "lv" | "en";
   const router = useRouter();
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  const other = locale === "lv" ? "en" : "lv";
+
+  const handleSwitch = (newLocale: "lv" | "en") => {
+    router.replace(pathname, { locale: newLocale });
+    setOpen(false);
+    onSwitch?.();
+  };
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="flex items-center gap-1.5 px-2.5 py-1.5 border border-zinc-200 hover:border-cesar-gold/60 bg-white hover:bg-zinc-50 transition-all rounded-sm group"
+        aria-label="Switch language"
+      >
+        {FLAGS[locale]}
+        <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-700 group-hover:text-black">
+          {LOCALE_LABELS[locale]}
+        </span>
+        <svg
+          className={`w-3 h-3 text-zinc-400 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="absolute right-0 top-full mt-1.5 bg-white border border-zinc-200 shadow-lg rounded-sm overflow-hidden z-50 min-w-[80px]">
+          <button
+            onClick={() => handleSwitch(other)}
+            className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-zinc-50 hover:text-cesar-gold transition-colors"
+          >
+            {FLAGS[other]}
+            <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-600">
+              {LOCALE_LABELS[other]}
+            </span>
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function Navigation() {
+  const t = useTranslations("nav");
   const [isOpen, setIsOpen] = useState(false);
 
   type NavLink =
@@ -23,10 +100,6 @@ export default function Navigation() {
     { type: "route", href: "/tournament-history", label: t("history") },
     { type: "route", href: "/rules", label: t("rules") },
   ];
-
-  const switchLocale = (newLocale: "lv" | "en") => {
-    router.replace(pathname, { locale: newLocale });
-  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-zinc-100 h-14 md:h-16 flex items-center shadow-sm">
@@ -71,21 +144,7 @@ export default function Navigation() {
             )
           )}
 
-          <div className="flex items-center gap-1 text-[11px] font-extrabold tracking-widest uppercase">
-            <button
-              onClick={() => switchLocale("lv")}
-              className={locale === "lv" ? "text-cesar-gold" : "text-zinc-400 hover:text-black transition-colors"}
-            >
-              LV
-            </button>
-            <span className="text-zinc-200">|</span>
-            <button
-              onClick={() => switchLocale("en")}
-              className={locale === "en" ? "text-cesar-gold" : "text-zinc-400 hover:text-black transition-colors"}
-            >
-              EN
-            </button>
-          </div>
+          <LanguageDropdown />
 
           <div className="h-8 w-px bg-zinc-100"></div>
           <Link
@@ -137,20 +196,8 @@ export default function Navigation() {
             )
           )}
 
-          <div className="flex items-center gap-3 text-sm font-extrabold tracking-widest uppercase pt-2 border-t border-zinc-100">
-            <button
-              onClick={() => { switchLocale("lv"); setIsOpen(false); }}
-              className={locale === "lv" ? "text-cesar-gold" : "text-zinc-400"}
-            >
-              LV
-            </button>
-            <span className="text-zinc-200">|</span>
-            <button
-              onClick={() => { switchLocale("en"); setIsOpen(false); }}
-              className={locale === "en" ? "text-cesar-gold" : "text-zinc-400"}
-            >
-              EN
-            </button>
+          <div className="pt-2 border-t border-zinc-100">
+            <LanguageDropdown onSwitch={() => setIsOpen(false)} />
           </div>
 
           <Link
