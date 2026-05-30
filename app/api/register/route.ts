@@ -95,14 +95,33 @@ async function sendAdminNotification(data: {
   });
 }
 
-async function sendConfirmationEmail(data: {
-  teamName: string;
-  captainName: string;
-  email: string;
-}) {
-  await resend.emails.send({
-    from: FROM_EMAIL,
-    to: data.email,
+function getConfirmationEmailContent(locale: string, teamName: string) {
+  if (locale === 'en') {
+    return {
+      subject: "⚽ Application received — Cēzara Kauss",
+      html: `
+        <div style="font-family:sans-serif;max-width:600px;color:#333;line-height:1.7;">
+          <p>Thank you for registering your team for the <strong>Cēzara Kauss</strong> tournament.</p>
+          <p>Please make the payment to the account below, stating your team name and city in the payment reference so we can confirm your participation:</p>
+
+          <div style="background:#f7f7f7;padding:20px;margin:20px 0;border-left:4px solid #c9a227;">
+            <p style="margin:0 0 4px;font-weight:bold;font-size:13px;color:#888;text-transform:uppercase;letter-spacing:1px;">Payment details:</p>
+            <p style="margin:4px 0;"><strong>Association "FUTBOLS GULBENĒ"</strong></p>
+            <p style="margin:4px 0;">Reg. no. 40008347731</p>
+            <p style="margin:4px 0;">LV42HABA0551061679039</p>
+            <br/>
+            <p style="margin:4px 0;"><strong>Entry fee — 150 EUR</strong></p>
+          </div>
+
+          <p>Teams receive an email confirmation after submitting the application and must transfer the entry fee within <strong>3 calendar days</strong>. If the payment is not received, the application is considered withdrawn and cancelled. Once payment is received, the team is added to the participants list. Confirmed teams are added to the list daily after 18:00.</p>
+
+          <p style="margin-top:24px;">See you soon,<br/><strong>Cēzara Kauss team!</strong></p>
+        </div>
+      `,
+    };
+  }
+
+  return {
     subject: "⚽ Pieteikums saņemts — Cēzara Kauss",
     html: `
       <div style="font-family:sans-serif;max-width:600px;color:#333;line-height:1.7;">
@@ -123,6 +142,21 @@ async function sendConfirmationEmail(data: {
         <p style="margin-top:24px;">Uz drīzu tikšanos,<br/><strong>Cēzara Kauss komanda!</strong></p>
       </div>
     `,
+  };
+}
+
+async function sendConfirmationEmail(data: {
+  teamName: string;
+  captainName: string;
+  email: string;
+  locale: string;
+}) {
+  const { subject, html } = getConfirmationEmailContent(data.locale, data.teamName);
+  await resend.emails.send({
+    from: FROM_EMAIL,
+    to: data.email,
+    subject,
+    html,
   });
 }
 
@@ -135,6 +169,7 @@ export async function POST(request: Request) {
     const email = formData.get("email") as string;
     const phone = formData.get("phone") as string;
     const comment = (formData.get("comment") as string) || "";
+    const locale = (formData.get("locale") as string) || "lv";
     const logo = formData.get("logo") as File | null;
 
     if (!teamName || !captainName || !email || !phone) {
@@ -189,7 +224,7 @@ export async function POST(request: Request) {
         logoFilename,
         logoType,
       }),
-      sendConfirmationEmail({ teamName, captainName, email }),
+      sendConfirmationEmail({ teamName, captainName, email, locale }),
     ]);
 
     if (results[0].status === "rejected") {

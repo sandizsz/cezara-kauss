@@ -1,0 +1,329 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "About",
+    "history": "History",
+    "rules": "Rules",
+    "register": "Join the Tournament",
+    "mobileRegister": "Join THe Tournament",
+    "subtitle": "ARTŪRS DEKSNIS MEMORIAL TOURNAMENT"
+  },
+  "hero": {
+    "tagline": "ARTŪRS DEKSNIS MEMORIAL TOURNAMENT",
+    "subtitle1": "More than just a tournament - a true football celebration.",
+    "subtitle2": "EMOTIONS. FRIENDS.",
+    "subtitleHighlight": "FOOTBALL.",
+    "ctaRegister": "Join the Tournament",
+    "ctaHistory": "View Tournament Archive",
+    "countdownLabel": "Time until registration closes",
+    "days": "DAYS",
+    "hours": "HOURS",
+    "minutes": "MINUTES",
+    "seconds": "SECONDS"
+  },
+  "about": {
+    "sectionLabel": "About the tournament",
+    "title": "WHAT IS THE FOOTBALL TOURNAMENT",
+    "titleHighlight": "CĒZARA KAUSS?",
+    "description": "Cēzara Kauss is an amateur football tournament that had its debut on July 27, 2024, during the Gulbene city celebrations. This tournament, held annually in a festive atmosphere, offers an exciting day for football fans and families with children alike.",
+    "dateLabel": "DATE",
+    "dateValue": "JULY 25",
+    "dateSub": "YEAR 2026",
+    "locationLabel": "VENUE",
+    "locationValue": "GULBENE City Stadium",
+    "locationSub": "O. KALPAKA ST. 1A",
+    "formatLabel": "FORMAT",
+    "formatValue": "5 x 5",
+    "formatSub": "Dynamic tournament format",
+    "feeLabel": "ENTRY FEE",
+    "feeValue": "€150",
+    "feeSub": "Per team"
+  },
+  "prizePool": {
+    "sectionLabel": "Awards",
+    "title": "PRIZE",
+    "titleHighlight": "POOL",
+    "firstLabel": "1st PLACE",
+    "firstTag": "Grand Prize",
+    "firstSub": "+ Trophy, gifts from sponsors",
+    "secondLabel": "2nd PLACE",
+    "secondTitle": "Silver Medal",
+    "secondSub": "+ gifts from sponsors",
+    "thirdLabel": "3rd PLACE",
+    "thirdTitle": "BRONZE MEDAL",
+    "thirdSub": "+ gifts from sponsors"
+  },
+  "hallOfFame": {
+    "sectionLabel": "Cēzara Kauss",
+    "title": "Hall of",
+    "titleHighlight": "Fame",
+    "finalResult": "FINAL SCORE",
+    "pen": "PEN:"
+  },
+  "matchDay": {
+    "sectionLabel": "101 reasons",
+    "title": "WHY VISIT THE FOOTBALL TOURNAMENT",
+    "titleHighlight": "CĒZARA KAUSS?",
+    "description": "Cēzara Kauss is not just about football - it is about community and a great time. During match breaks, visitors can enjoy a festive atmosphere. Families with children will have the opportunity to participate in various activities.\n\nParents will have the chance to relax and enjoy various culinary delights while children are entertained. Throughout the day, various entertainment events will take place that will make every festival visitor a part of the magic of Cēzara Kauss.\n\nAnd that is not all. July 25 is also Gulbene City Day, meaning all tournament participants and visitors are warmly invited to join the city's events, concerts and markets.",
+    "features": [
+      {
+        "title": "Great atmosphere & music",
+        "desc": "We will create a great atmosphere at the stadium together - cheering for our own while having a wonderful time. DJ JVS will be responsible for the music throughout the entire day."
+      },
+      {
+        "title": "Attractions for kids",
+        "desc": "Come with your family and do not worry about entertaining the younger ones - we will take care of that. Inflatable attractions, cotton candy, popcorn and other activities will be available all day."
+      },
+      {
+        "title": "Competitions for spectators",
+        "desc": "Spectators should also be ready for friendly competitions. Participate and receive prizes from our supporters."
+      },
+      {
+        "title": "Food & drinks",
+        "desc": "Playing and cheering for your team burns a lot of calories and energy, so during the tournament there will be both tasty food and various refreshing drinks available."
+      }
+    ]
+  },
+  "sponsors": {
+    "sectionLabel": "Big Thanks",
+    "title": "Tournament",
+    "titleHighlight": "Sponsors",
+    "subtitle": "Without you this football tournament would not be possible - thank you for your trust and support!"
+  },
+  "teamSection": {
+    "sectionLabel": "#TEAMCEZARAKAUSS",
+    "title": "Our",
+    "titleHighlight": "Team",
+    "description": "We are local patriots with a global vision of what a modern football event should look like. Our team brings together organizers who care about the future of Latvian football and regional development.\n\nWe believe that great football starts right here - in local stadiums. Our driving force is the desire to prove that top-level organizational quality is possible anywhere in Latvia, if the right people with passion and the right attitude take on the work.",
+    "alwaysWithUs": "Always with us",
+    "roles": {
+      "founder": "Founder",
+      "technical": "Technical Support",
+      "pr": "Public Relations",
+      "marketing": "Marketing & IT",
+      "dj": "DJ / Atmosphere",
+      "referee": "Head Referee"
+    }
+  },
+  "timeline": {
+    "sectionLabel": "INTENSITY",
+    "title": "DAY",
+    "titleHighlight": "SCHEDULE",
+    "events": [
+      { "time": "09:00", "event": "REGISTRATION & WARM-UP", "desc": "Team arrival and number collection." },
+      { "time": "10:00", "event": "OPENING CEREMONY", "desc": "Tournament opening and official speeches." },
+      { "time": "10:30", "event": "GROUP STAGE BEGINS", "desc": "Intense battles on all pitches." },
+      { "time": "14:00", "event": "BREAK & SKILL CHALLENGES", "desc": "Rest for players and competitions for spectators." },
+      { "time": "15:30", "event": "KNOCKOUT ROUNDS", "desc": "Quarter-finals and semi-finals." },
+      { "time": "18:00", "event": "GRAND FINAL", "desc": "Battle for €1,000 and the Cēzara Kauss." },
+      { "time": "19:00", "event": "AWARD CEREMONY", "desc": "Champions celebration and Afterparty." }
+    ]
+  },
+  "video": {
+    "title": "Video",
+    "titleHighlight": "Highlights",
+    "subtitle": "If you want to experience it yourself - Join the Tournament and we will see you on July 25.",
+    "subtitleLinkText": "Join the Tournament"
+  },
+  "location": {
+    "sectionLabel": "LOCATION",
+    "title": "GULBENE CITY",
+    "titleHighlight": "STADIUM",
+    "description": "The Cēzara Kauss amateur football tournament traditionally takes place during the city celebrations in Gulbene, at the Gulbene City Stadium. The stadium has a capacity of 1,500 seats. Free parking is available around the stadium for participants and visitors.",
+    "description2": "Gulbene is a fantastic city well worth exploring. Visit the visitgulbene.lv website for places to eat, sights and accommodation.",
+    "addressLabel": "OFFICIAL ADDRESS",
+    "addressValue": "O. KALPAKA ST. 1A, GULBENE",
+    "surfaceLabel": "SURFACE",
+    "surfaceValue": "NATURAL GRASS",
+    "parkingLabel": "PARKING",
+    "parkingValue": "FREE"
+  },
+  "footer": {
+    "subtitle": "Artūrs Deksnis Memorial Tournament",
+    "navTitle": "Navigation",
+    "navHome": "Home",
+    "navAbout": "About",
+    "navHistory": "History",
+    "navRules": "Rules",
+    "navRegister": "Register",
+    "followTitle": "Follow Us"
+  },
+  "history": {
+    "pageTagline": "CĒZARA KAUSS ARCHIVE",
+    "title": "TOURNAMENT",
+    "titleHighlight": "HISTORY",
+    "subtitle": "Results, photo gallery and statistics from all Cēzara Kauss tournaments",
+    "scrollLabel": "Scroll",
+    "yearLabel": "Cēzara Kauss",
+    "results": "Results",
+    "viewAllResults": "View all results",
+    "resultsSubtitle": "Group tables, knockout stage and full statistics",
+    "stats": "Statistics",
+    "participants": "Participants",
+    "champions": "Champions",
+    "firstPlace": "1st place",
+    "secondPlace": "2nd place",
+    "thirdPlace": "3rd place",
+    "pen": "PEN:",
+    "videoLabel": "Video",
+    "photoGallery": "Photo gallery",
+    "showMore": "Show more",
+    "statLabels": {
+      "Komandas": "Teams",
+      "Spēles": "Matches",
+      "Vārti": "Goals",
+      "MVP": "MVP"
+    }
+  },
+  "rules": {
+    "pageTagline": "Cēzara Kauss",
+    "title": "TOURNAMENT",
+    "titleHighlight": "RULES",
+    "subtitle": "Official tournament rules and competition format",
+    "sections": [
+      {
+        "title": "1. TOURNAMENT GOALS",
+        "items": [
+          "1.1 To promote football and a healthy lifestyle in Gulbene Municipality;",
+          "1.2 To determine the best football teams of the Cēzara Kauss tournament;",
+          "1.3 To encourage public interest in football."
+        ]
+      },
+      {
+        "title": "2. TOURNAMENT MANAGEMENT AND ORGANISATION",
+        "items": [
+          "2.1 The tournament organiser is the association \"Futbols Gulbenē\" (hereinafter – the Organiser), email: cezarakauss@gmail.com / tel.: 25641934;",
+          "2.2 Chief referee of the competition: Artēmijs Semjonovs (email: cezarakauss@gmail.com / tel.: 25641934)."
+        ]
+      },
+      {
+        "title": "3. VENUE AND DATE",
+        "items": [
+          "3.1. Cēzara Kauss takes place on 25 July 2026 at the Gulbene City Stadium, O. Kalpaka Street 1A."
+        ]
+      },
+      {
+        "title": "4. PARTICIPANTS",
+        "items": [
+          "4.1 Any team that agrees to comply with the Rules may participate in Cēzara Kauss;",
+          "4.2 Each team may register up to 10 players;",
+          "4.3 Players must be at least 15 years old (born no later than 2011);",
+          "4.4 All players are equally responsible for the information submitted on behalf of their team;",
+          "4.5 The Organisers reserve the right to make the final decision on whether a team or individual player may participate;",
+          "4.6 If false information is discovered during the tournament, the entire team will be disqualified;",
+          "4.7 Each team must wear matching shirts with numbers; the goalkeeper's shirt must differ in colour from outfield players;",
+          "4.8 A player may only participate in the tournament as part of one team;",
+          "4.9 A team may withdraw from the tournament. In such a case, the entry fee will not be refunded."
+        ]
+      },
+      {
+        "title": "5. REGISTRATION",
+        "items": [
+          "5.1 Teams may register at www.cezarakauss.lv;",
+          "5.2 By registering, participants confirm that they do not object to the use of their personal data (name, surname) for publishing results;",
+          "5.3 Teams may register no later than 7 calendar days before the tournament start (July 25);",
+          "5.4 Players must treat the organisers and the Rules with respect;",
+          "5.5 After submitting the application, teams must transfer the entry fee within 3 calendar days;",
+          "5.6 The entry fee must be paid to the account specified in the confirmation email. The entry fee is non-refundable;",
+          "5.7 If more than 40 teams register, additional teams will be placed on a waiting list;",
+          "5.8 On the day of the tournament, each team will receive a match sheet upon check-in;",
+          "5.9 The team representative is responsible for ensuring the match sheet is correctly completed."
+        ]
+      },
+      {
+        "title": "6. COMPETITION FORMAT",
+        "items": [
+          "6.1 Teams compete in a two-phase tournament (group stage + playoff stage).",
+          "6.2 Teams will be divided into groups. The top 2 teams from each group advance to the playoff stage.",
+          "6.3 Team standings are determined by points (win – 3 pts, draw – 1 pt, loss – 0 pts).",
+          "6.4 In the playoff stage, draws are decided by penalty shoot-outs - 5 kicks per team.",
+          "6.5 Match duration: 2 × 10 minutes.",
+          "6.6 Players on the pitch: 5 (including goalkeeper), format is 5v5;",
+          "6.7 Goal size: 3m × 2m;",
+          "6.8 Results can be followed at tournify.com.",
+          "6.9 Each match result will be published on the official results website.",
+          "6.10 The Organisers reserve the right to change match times and venues in exceptional circumstances.",
+          "6.11 If a team fails to appear within 10 minutes of the scheduled kick-off, they receive a technical defeat of 0:3."
+        ]
+      },
+      {
+        "title": "7. PROTESTS",
+        "items": [
+          "7.1 Protests must be submitted in writing to the chief referee within 30 minutes of the final whistle;",
+          "7.2 Protests regarding match time, penalty kicks, or whether goals were counted will not be accepted;",
+          "7.3 Submitted protests are reviewed by a three-person committee."
+        ]
+      },
+      {
+        "title": "8. REFEREES",
+        "items": [
+          "8.1 Referees are appointed by the tournament organisers;",
+          "8.2 All tournament referees are certified by the Latvian Football Federation;",
+          "8.3 Any decision by a referee during a match is final and cannot be disputed;",
+          "8.4 Teams may not raise complaints against a referee's actions or insult a referee;",
+          "8.5 The chief referee may disqualify a player if there are grounds to suspect: falsification of data, impersonation, breach of the Rules, or intoxication."
+        ]
+      },
+      {
+        "title": "9. DISCIPLINARY RULES",
+        "items": [
+          "9.2 For spitting, deliberate kicking or serious foul play - dismissal and suspension for the next match. Repeat offence: disqualification from the tournament;",
+          "9.3 For insulting a referee - dismissal and suspension for the next three matches;",
+          "9.4 The Organisers reserve the right to impose individual disciplinary decisions;",
+          "9.5 If a team cannot start on time, the team representative must notify the chief referee at least 20 minutes before kick-off;",
+          "9.6 If an unlisted player participates, the team receives a technical defeat of 0:3.",
+          "9.7 If a team withdraws without completing all their matches, they will be banned from the following year's tournament."
+        ]
+      },
+      {
+        "title": "10. MEDICAL",
+        "items": [
+          "10.1 Each player is responsible for their own physical condition during play;",
+          "10.2 Minor injuries are treated by the team coach or a medic on site;",
+          "10.3 The Organisers will provide a fully equipped first-aid kit during the tournament;",
+          "10.4 In case of serious injury, the Organisers will call emergency medical services."
+        ]
+      },
+      {
+        "title": "11. PRIZE POOL",
+        "items": [
+          "11.1 The top 3 teams will receive prizes as determined by the Organisers;",
+          "11.2 The Organisers reserve the right to award additional special prizes;",
+          "11.3 The tournament MVP, best striker, best goalkeeper and best defender will all be awarded."
+        ]
+      }
+    ]
+  },
+  "registration": {
+    "sectionLabel": "REGISTRATION",
+    "title": "REGISTER",
+    "titleHighlight": "YOUR TEAM",
+    "feeLabel": "ENTRY FEE",
+    "teamNameLabel": "TEAM NAME",
+    "captainLabel": "CAPTAIN'S FULL NAME",
+    "phoneLabel": "PHONE",
+    "emailLabel": "EMAIL",
+    "logoLabel": "TEAM LOGO (OPTIONAL)",
+    "commentLabel": "COMMENT (OPTIONAL)",
+    "commentPlaceholder": "ADDITIONAL INFORMATION...",
+    "uploadButton": "UPLOAD LOGO",
+    "uploadTypes": "PNG, JPG, SVG - MAX 5MB",
+    "submitButton": "SUBMIT APPLICATION",
+    "submitting": "SUBMITTING...",
+    "rulesTitle": "Rules",
+    "rulesMinAge": "MINIMUM AGE: 15 YEARS",
+    "rulesFormat": "FORMAT: 5 VS 5 (+RESERVE)",
+    "rulesMaxPlayers": "MAX PLAYERS PER TEAM: 10",
+    "rulesGames": "GUARANTEED MATCHES: 4",
+    "rulesLink": "Full tournament rules",
+    "limitWarning": "TEAM SPOTS ARE LIMITED. PRIORITY IS GIVEN IN ORDER OF REGISTRATION.",
+    "logoError": "Logo file must not exceed 5MB",
+    "genericError": "Something went wrong. Please try again.",
+    "successTitle": "APPLICATION",
+    "successTitleHighlight": "RECEIVED",
+    "successP1": "Thank you for registering your team for the Cēzara Kauss tournament.",
+    "successP2": "We have sent you an email with confirmation and further information (payment details etc.).",
+    "successP3": "If you do not see the message, please check your SPAM/JUNK folder.",
+    "backButton": "BACK TO START"
+  }
+}

@@ -1,13 +1,15 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/lib/navigation";
 
 const LOGO_URL = "/images/2026cezara_logo.svg";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
     <footer className="bg-black text-white py-16 md:py-24 border-t-8 border-cesar-gold">
       <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start">
 
-        {/* Logo & Title */}
         <div className="flex items-center gap-4">
           <img
             src={LOGO_URL}
@@ -19,28 +21,25 @@ export default function Footer() {
               CĒZARA<span className="text-cesar-gold">KAUSS</span>
             </h4>
             <p className="text-zinc-500 text-[10px] md:text-xs mt-1 uppercase tracking-[0.3em] font-bold">
-              Artūra Dekšņa Piemiņas Turnīrs
+              {t("subtitle")}
             </p>
           </div>
         </div>
 
-        {/* Navigation */}
         <div className="space-y-4 md:space-y-6">
-          <h5 className="font-display text-xl md:text-2xl text-cesar-gold uppercase tracking-widest">Navigācija</h5>
+          <h5 className="font-display text-xl md:text-2xl text-cesar-gold uppercase tracking-widest">{t("navTitle")}</h5>
           <div className="flex flex-col gap-3 md:gap-4 text-zinc-400 font-extrabold text-xs uppercase tracking-[0.3em]">
-            <Link href="/" className="hover:text-cesar-gold transition-colors text-left">Sākums</Link>
-            <Link href="/#par-turniru" className="hover:text-cesar-gold transition-colors text-left">Par turnīru</Link>
-            <Link href="/turnira-vesture" className="hover:text-cesar-gold transition-colors text-left">Vēsture</Link>
-            <Link href="/reglaments" className="hover:text-cesar-gold transition-colors text-left">Reglaments</Link>
-            <Link href="/registret-komandu" className="hover:text-cesar-gold transition-colors text-left">Reģistrācija</Link>
+            <Link href="/" className="hover:text-cesar-gold transition-colors text-left">{t("navHome")}</Link>
+            <a href="/#par-turniru" className="hover:text-cesar-gold transition-colors text-left">{t("navAbout")}</a>
+            <Link href="/tournament-history" className="hover:text-cesar-gold transition-colors text-left">{t("navHistory")}</Link>
+            <Link href="/rules" className="hover:text-cesar-gold transition-colors text-left">{t("navRules")}</Link>
+            <Link href="/sign-up" className="hover:text-cesar-gold transition-colors text-left">{t("navRegister")}</Link>
           </div>
         </div>
 
-        {/* Social & Contact */}
         <div className="space-y-4 md:space-y-6">
-          <h5 className="font-display text-xl md:text-2xl text-cesar-gold uppercase tracking-widest">Seko Mums</h5>
+          <h5 className="font-display text-xl md:text-2xl text-cesar-gold uppercase tracking-widest">{t("followTitle")}</h5>
 
-          {/* Social Icons */}
           <div className="flex gap-4">
             <a
               href="https://instagram.com/cezarakauss"

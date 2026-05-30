@@ -1,0 +1,329 @@
+{
+  "nav": {
+    "home": "SĀKUMS",
+    "about": "Par turnīru",
+    "history": "Vēsture",
+    "rules": "Reglaments",
+    "register": "Reģistrēt komandu turnīram",
+    "mobileRegister": "REĢISTRĒT KOMANDU",
+    "subtitle": "ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS"
+  },
+  "hero": {
+    "tagline": "ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS",
+    "subtitle1": "Vairāk nekā turnīrs - īsti futbola svētki.",
+    "subtitle2": "EMOCIJAS. DRAUGI.",
+    "subtitleHighlight": "FUTBOLS.",
+    "ctaRegister": "Reģistrēt komandu",
+    "ctaHistory": "Skatīt Turnīra arhīvu",
+    "countdownLabel": "Līdz reģistrācijas beigām atlicis",
+    "days": "DIENAS",
+    "hours": "STUNDAS",
+    "minutes": "MINŪTES",
+    "seconds": "SEKUNDES"
+  },
+  "about": {
+    "sectionLabel": "Par futbola turnīru",
+    "title": "KAS IR FUTBOLA TURNĪRS",
+    "titleHighlight": "CĒZARA KAUSS?",
+    "description": "Cēzara kauss ir amatieru futbola turnīrs, kas savu debiju piedzīvoja 2024. gada 27. jūlijā, Gulbenes pilsētas svētku laikā. Šis turnīrs, kas ikgadu norisinās svētku atmosfērā, piedāvā aizraujošu dienu gan sporta faniem, gan ģimenēm ar bērniem.",
+    "dateLabel": "DATUMS",
+    "dateValue": "25. JŪLIJS",
+    "dateSub": "2026. GADS",
+    "locationLabel": "VIETA",
+    "locationValue": "GULBENES Pilsētas Stadions",
+    "locationSub": "O. KALPAKA IELA 1A",
+    "formatLabel": "FORMĀTS",
+    "formatValue": "5 x 5",
+    "formatSub": "Dinamisks turnīra formāts",
+    "feeLabel": "DALĪBAS MAKSA",
+    "feeValue": "€150",
+    "feeSub": "No komandas"
+  },
+  "prizePool": {
+    "sectionLabel": "Apbalvojumi",
+    "title": "BALVU",
+    "titleHighlight": "FONDS",
+    "firstLabel": "1. VIETA",
+    "firstTag": "Galvenā Balva",
+    "firstSub": "+ Kauss, dāvanas no atbalstītājiem",
+    "secondLabel": "2. VIETA",
+    "secondTitle": "Sudraba Godalgas",
+    "secondSub": "+ dāvanas no atbalstītājiem",
+    "thirdLabel": "3. VIETA",
+    "thirdTitle": "BRONZAS GODALGAS",
+    "thirdSub": "+ dāvanas no atbalstītājiem"
+  },
+  "hallOfFame": {
+    "sectionLabel": "Cēzara Kauss",
+    "title": "Slavas",
+    "titleHighlight": "Zāle",
+    "finalResult": "FINĀLA REZULTĀTS",
+    "pen": "PEN:"
+  },
+  "matchDay": {
+    "sectionLabel": "101 iemesls",
+    "title": "KĀPĒC APMEKLĒT FUTBOLA TURNĪRU",
+    "titleHighlight": "CĒZARA KAUSS?",
+    "description": "Cēzara kauss ir ne tikai par futbolu, bet arī par kopienu un labi pavadītu laiku. Spēļu starplaikos apmeklētāji varēs izbaudīt svētku atmosfēru. Ģimenēm ar bērniem būs iespēja piedalīties dažādās aktivitātēs.\n\nVecākiem būs iespēja atpūsties un izbaudīt dažādus kulinārijas gardumus, kamēr bērni izklaidēsies piedāvātajās aktivitātēs. Dienas gaitā norisināsies dažādi izklaides pasākumi, kas katru festivāla apmeklētāju padarīs par daļu no Cēzara kausa burvības.\n\nUn tas vēl nav viss. 25. jūlijs ir arī Gulbenes pilsētas svētku diena, kas nozīmē, ka visi turnīra dalībnieki un apmeklētāji laipni aicināti piedalīties pilsētas piedāvātajos pasākumos, koncertos un tirdziņos.",
+    "features": [
+      {
+        "title": "Jautra atmosfēra & mūzika",
+        "desc": "Atmosfēru stadionā uzbursim kopīgi - atbalstot savējos un lieliski pavadot laiku, taču par mūziku, visas dienas garumā, būs atbildīgs DJ JVS"
+      },
+      {
+        "title": "Atrakcijas bērniem",
+        "desc": "Ierodies ar ģimeni un nedomā par to, kā izklaidēt mazākos, par to padomāsim mēs. Piepūšamās atrakcijas, cukurvate, popkorns un citas aktivitātes būs pieejamas visu dienu."
+      },
+      {
+        "title": "Konkursi skatītājiem",
+        "desc": "Arī skatītājiem jābūt gataviem draudzīgām sacensībām. Piedalies un saņem balvas no mūsu atbalstītājiem."
+      },
+      {
+        "title": "Ēdieni & dzērieni",
+        "desc": "Spēlējot un atbalstot savu komandu, tiks patērēts daudz kaloriju un enerģijas, tāpēc turnīra laikā būs pieejams gan garšīgs ēdiens, gan dažādi atspirdzinoši dzērieni."
+      }
+    ]
+  },
+  "sponsors": {
+    "sectionLabel": "Liels Paldies",
+    "title": "Turnīra",
+    "titleHighlight": "Atbalstītājiem",
+    "subtitle": "Bez Jums šis futbola turnīrs nebūtu iespējams, paldies par uzticēšanos un atbalstu!"
+  },
+  "teamSection": {
+    "sectionLabel": "#TEAMCEZARAKAUSS",
+    "title": "Mūsu",
+    "titleHighlight": "Komanda",
+    "description": "Mēs esam vietējie patrioti ar globālu redzējumu par to, kādam jābūt mūsdienīgam futbola pasākumam. Mūsu komandā apvienojušies organizatori, kuriem rūp Latvijas futbola nākotne un reģionu attīstība.\n\nMēs ticam, ka lielais futbols sākas tieši šeit – vietējos stadionos. Mūsu dzinējspēks ir vēlme pierādīt, ka augstākā līmeņa organizatoriskā kvalitāte ir iespējama jebkurā Latvijas vietā, ja vien pie darba ķeras cilvēki ar degsmi un īsto attieksmi.",
+    "alwaysWithUs": "Vienmēr ar mums",
+    "roles": {
+      "founder": "Idejas autors",
+      "technical": "Tehniskais nodrošinājums",
+      "pr": "Sabiedriskās attiecības",
+      "marketing": "Mārketings & IT",
+      "dj": "DJ / Atmosfēra",
+      "referee": "Galvenais tiesnesis"
+    }
+  },
+  "timeline": {
+    "sectionLabel": "INTENSITY",
+    "title": "DIENAS",
+    "titleHighlight": "PLĀNS",
+    "events": [
+      { "time": "09:00", "event": "REĢISTRĀCIJA UN IESILDĪŠANĀS", "desc": "Komandu ierašanās un numuru saņemšana." },
+      { "time": "10:00", "event": "ATKLĀŠANAS CEREMONIJA", "desc": "Turnīra atklāšana un svinīgās uzrunas." },
+      { "time": "10:30", "event": "GRUPU TURNĪRA SĀKUMS", "desc": "Intensīvas cīņas uz visiem laukumiem." },
+      { "time": "14:00", "event": "PAUZE & SKILL CHALLENGES", "desc": "Atelpa spēlētājiem un konkursi skatītājiem." },
+      { "time": "15:30", "event": "IZSLĒGŠANAS SPĒLES", "desc": "Ceturtdaļfināli un pusfināli." },
+      { "time": "18:00", "event": "LIELAIS FINĀLS", "desc": "Cīņa par €1000 un Cēzara Kausu." },
+      { "time": "19:00", "event": "APBALVOŠANA", "desc": "Uzvarētāju godināšana un Afterparty." }
+    ]
+  },
+  "video": {
+    "title": "Video",
+    "titleHighlight": "Atskats",
+    "subtitle": "Ja vēlies to piedzīvot pats — reģistrē savu komandu un tiekamies jau 25. jūlijā.",
+    "subtitleLinkText": "reģistrē savu komandu"
+  },
+  "location": {
+    "sectionLabel": "LOKĀCIJA",
+    "title": "GULBENES PILSĒTAS",
+    "titleHighlight": "STADIONS",
+    "description": "Amatieru futbola turnīrs \"Cēzara kauss\" tradicionāli norisinās pilsētas svētku laikā Gulbenē, Gulbenes pilsētas stadionā. Stadionam ir 1500 sēdvietu kapacitāte, kas nodrošina pietiekami daudz vietas skatītājiem, lai baudītu spēles ērtā un draudzīgā atmosfērā. Ap stadionu būs pieejamas bezmaksas stāvvietas.",
+    "description2": "Gulbene ir fantastiska pilsēta ko noteikti vērts aplūkot un iepazīt. Dodies uz visitgulbene.lv mājaslapu.",
+    "addressLabel": "OFICIĀLĀ ADRESE",
+    "addressValue": "O. KALPAKA IELA 1A, GULBENE",
+    "surfaceLabel": "SEGUMS",
+    "surfaceValue": "DABĪGAIS ZĀLIENS",
+    "parkingLabel": "STĀVVIETAS",
+    "parkingValue": "BEZ MAKSAS"
+  },
+  "footer": {
+    "subtitle": "Artūra Dekšņa Piemiņas Turnīrs",
+    "navTitle": "Navigācija",
+    "navHome": "Sākums",
+    "navAbout": "Par turnīru",
+    "navHistory": "Vēsture",
+    "navRules": "Reglaments",
+    "navRegister": "Reģistrācija",
+    "followTitle": "Seko Mums"
+  },
+  "history": {
+    "pageTagline": "CĒZARA KAUSS ARHĪVS",
+    "title": "TURNĪRA",
+    "titleHighlight": "VĒSTURE",
+    "subtitle": "Rezultāti, foto galerija un statistika no visiem Cēzara Kauss turnīriem",
+    "scrollLabel": "Skatīt",
+    "yearLabel": "Cēzara Kauss",
+    "results": "Rezultāti",
+    "viewAllResults": "Skatīt visus rezultātus",
+    "resultsSubtitle": "Grupu tabulas, izslēgšanas spēles un pilna statistika",
+    "stats": "Statistika",
+    "participants": "Dalībnieki",
+    "champions": "Čempioni",
+    "firstPlace": "1. vieta",
+    "secondPlace": "2. vieta",
+    "thirdPlace": "3. vieta",
+    "pen": "PEN:",
+    "videoLabel": "Video",
+    "photoGallery": "Foto galerija",
+    "showMore": "Rādīt vairāk",
+    "statLabels": {
+      "Komandas": "Komandas",
+      "Spēles": "Spēles",
+      "Vārti": "Vārti",
+      "MVP": "MVP"
+    }
+  },
+  "rules": {
+    "pageTagline": "Cēzara kauss",
+    "title": "TURNĪRA",
+    "titleHighlight": "REGLAMENTS",
+    "subtitle": "Oficiālie turnīra noteikumi un norises kārtība",
+    "sections": [
+      {
+        "title": "1. TURNĪRA MĒRĶI",
+        "items": [
+          "1.1 Popularizēt futbolu un veselīgu dzīvesveidu Gulbenes novadā;",
+          "1.2 Noskaidrot turnīra \"Cēzara kauss\" labākās futbola komandas;",
+          "1.3 Veicināt sabiedrības interesi par futbolu."
+        ]
+      },
+      {
+        "title": "2. TURNĪRA VADĪBA UN ORGANIZĀCIJA",
+        "items": [
+          "2.1 Turnīra organizators ir biedrība \"Futbols Gulbenē\". (turpmāk tekstā – Organizators), e-pasts: cezarakauss@gmail.com / tel.: 25641934;",
+          "2.2 Sacensību galvenais tiesnesis Artēmijs Semjonovs (e-pasts: cezarakauss@gmail.com / tel.: 25641934)."
+        ]
+      },
+      {
+        "title": "3. TURNĪRA NORISES VIETA UN LAIKS",
+        "items": [
+          "3.1. \"Cēzara kauss\" norisinās 2026.gada 25.jūlijā, Gulbenes pilsētas stadionā, O.Kalpaka iela 1a."
+        ]
+      },
+      {
+        "title": "4. DALĪBNIEKI",
+        "items": [
+          "4.1 Turnīrā \"Cēzara kauss\" var piedalīties jebkura komanda, kas apņemas ievērot un pildīt Reglamenta nosacījumus;",
+          "4.2 Vienas komandas sastāvā turnīrā drīkst pieteikt 10(!) spēlētājus;",
+          "4.3 Spēlētājiem jābūt sasniegušiem 15 gadu vecumu (ne jaunākiem kā 2011.gadā dzimušie);",
+          "4.4 Spēlētāji ir vienlīdz atbildīgi par savas komandas katra spēlētāja iesniegto informāciju;",
+          "4.5 Organizatori patur tiesības pieņemt galējo lēmumu par komandas vai atsevišķa spēlētāja pielaišanu pie spēlēšanas turnīrā;",
+          "4.6 Ja turnīra norises laikā organizators atklāj faktu par nepatiesi sniegtu informāciju, no turnīra tiek diskvalificēta visa komanda;",
+          "4.7 Katrai komandai ir jābūt vienādas krāsas krekliem ar numuriem, vārtsarga krekla krāsai jābūt atšķirīgai no laukuma spēlētājiem;",
+          "4.8 Spēlētājs turnīrā drīkst piedalīties tikai vienas komandas sastāvā;",
+          "4.9 Komanda var atsaukt savu dalību turnīrā. Dalības atsaukšanas gadījumā dalības maksa atmaksāta netiek."
+        ]
+      },
+      {
+        "title": "5. PIETEIKŠANĀS",
+        "items": [
+          "5.1 Komandas turnīram var pieteikties interneta vietnē www.cezarakauss.lv;",
+          "5.2 Dalībnieki, piesakoties turnīram apliecina, ka neiebilst savu personas datu izmantošanai rezultātu apkopošanā un publicēšanā;",
+          "5.3 Komandas var pieteikt savu dalību turnīrā ne vēlāk kā 7 kalendārās dienas līdz turnīra sākumam (25. jūlijs);",
+          "5.4 Spēlētājam jāizturas pret organizatoriem un reglamentu ar cieņu;",
+          "5.5 Komandas pēc pieteikuma nosūtīšanas saņem apstiprinājumu e-pastā un 3 kalendāro dienu laikā veic dalības maksas pārskaitījumu;",
+          "5.6 Dalības maksa pēc apstiprinājuma saņemšanas jāiemaksā apstiprinājuma e-pastā norādītajā kontā. Dalības maksa netiek atgriezta;",
+          "5.7 Ja turnīram pieteikušās vairāk nekā 40 komandas, nākamās komandas tiks iekļautas \"gaidīšanas sarakstā\";",
+          "5.8 Turnīra dienā, katrai komandai reģistrējot savu ierašanos, tiks izsniegts komandas protokols;",
+          "5.9 Komandas pārstāvim ir pienākums pārliecināties par protokola korektu aizpildīšanu."
+        ]
+      },
+      {
+        "title": "6. NORISES KĀRTĪBA",
+        "items": [
+          "6.1 Komandas spēlē divu fāžu turnīru (grupu fāze + playoff fāze).",
+          "6.2 Komandas tiks dalītas grupās atbilstoši reģistrēto komandu skaitam. 2 labākās no katras apakšgrupas kvalificējas playoff fāzei.",
+          "6.3 Komandu vietas nosaka pēc iegūto punktu summas (uzvara – 3 p., neizšķirts – 1 p., zaudējums – 0 p.).",
+          "6.4 Playoff turnīra fāzē pie neizšķirta rezultāta seko 6m soda sitieni – 5 katrai komandai.",
+          "6.5 Spēles laiks 2 x 10 min.",
+          "6.6 Spēlētāji laukumā: 5 (ieskaitot vārtsargu), spēle norit formātā 5 pret 5;",
+          "6.7 Vārtu izmēri: 3m x 2m;",
+          "6.8 Turnīra rezultātus var sekot vietnē tournify.com.",
+          "6.9 Pēc katras spēles rezultāts tiks publicēts turnīra rezultātu vietnē.",
+          "6.10 Turnīra organizatoriem ir tiesības veikt izmaiņas spēļu norises laikos un vietās.",
+          "6.11 Ja komanda neierodas uz spēli 10 minūšu laikā pēc plānotā sākuma, tai tiek piešķirts tehniskais zaudējums 0:3."
+        ]
+      },
+      {
+        "title": "7. PROTESTS",
+        "items": [
+          "7.1 Protests iesniedzams rakstiski galvenajam tiesnesim pusstundas laikā pēc spēles beigu signāla;",
+          "7.2 Protestus nepieņem par spēles laiku, 6m un 10m soda sitieniem, ieskaitītiem vai neieskaitītiem vārtiem;",
+          "7.3 Iesniegtos protestus izskata komiteja trīs cilvēku sastāvā."
+        ]
+      },
+      {
+        "title": "8. TIESNEŠI",
+        "items": [
+          "8.1 Tiesnešus turnīram nozīmē turnīra organizatori;",
+          "8.2 Visi turnīra tiesneši ir apstiprināti Latvijas futbola federācijā;",
+          "8.3 Jebkurš spēles tiesnešu lēmums spēles laikā ir galīgs un neapstrīdams;",
+          "8.4 Komandām nav tiesību vērsties ar pretenzijām pret tiesneša darbībām vai apvainot tiesnesi;",
+          "8.5 Turnīra galvenajam tiesnesim ir tiesības nepielaist pie spēles spēlētāju ja rodas aizdomas par: datu sagrozīšanu, uzdošanos par citu personu, reglamenta neievērošanu vai alkohola/apreibinošo vielu ietekmi."
+        ]
+      },
+      {
+        "title": "9. TURNĪRA DISCIPLĪNA",
+        "items": [
+          "9.2 Par spļaušanu, tīšu speršanu vai rupjību – noraidījums un jāizlaiž nākamā spēle. Par atkārtotu pārkāpumu diskvalifikācija uz visu turnīru;",
+          "9.3 Par tiesnešu apvainošanu – noraidījums un jāizlaiž nākamās trīs spēles;",
+          "9.4 Organizatoriem ir tiesības pieņemt atsevišķus lēmumus par soda apmēriem;",
+          "9.5 Ja komanda nevar uzsākt spēli laikus, tās pārstāvim jābrīdina galvenais tiesnesis ne vēlāk kā 20 minūtes pirms spēles;",
+          "9.6 Par spēlētāja, kurš nav iekļauts protokolā, piedalīšanos spēlē, komandai tiek piešķirts tehniskais zaudējums 0:3.",
+          "9.7 Ja komanda izstājas no turnīra, nenospēlējot visas savas spēles, komandai tiek liegta dalība nākamā gada turnīrā."
+        ]
+      },
+      {
+        "title": "10. MEDICĪNA",
+        "items": [
+          "10.1 Katrs spēlētājs ir atbildīgs par savu veselības stāvokli spēles laikā;",
+          "10.2 Sīku traumu gadījumos medicīnisko palīdzību sniedz komandas treneris vai mediķis;",
+          "10.3 Organizatori turnīra laikā nodrošina ar pilnībā aprīkotu medicīnas somu;",
+          "10.4 Nopietnas traumas gadījumā organizatori nodrošina neatliekamās medicīniskās palīdzības izsaukšanu."
+        ]
+      },
+      {
+        "title": "11. TURNĪRA BALVU FONDS",
+        "items": [
+          "11.1 Turnīra pirmās 3 vietas ieguvušās komandas tiek apbalvotas ar organizatora noteiktām balvām;",
+          "11.2 Organizatoriem ir tiesības piešķirt citas speciālās balvas;",
+          "11.3 Tiek apbalvots visa turnīra fināla labākais spēlētājs (MVP), labākais uzbrucējs, labākais vārtsargs un labākais aizsargs."
+        ]
+      }
+    ]
+  },
+  "registration": {
+    "sectionLabel": "DALĪBA",
+    "title": "PIETEIKT",
+    "titleHighlight": "KOMANDU TURNĪRAM",
+    "feeLabel": "DALĪBAS MAKSA",
+    "teamNameLabel": "KOMANDAS NOSAUKUMS",
+    "captainLabel": "KAPTEIŅA VĀRDS, UZVĀRDS",
+    "phoneLabel": "TĀLRUNIS",
+    "emailLabel": "E-PASTS",
+    "logoLabel": "KOMANDAS LOGO (NEOBLIGĀTI)",
+    "commentLabel": "KOMENTĀRS (NEOBLIGĀTI)",
+    "commentPlaceholder": "PAPILDUS INFORMĀCIJA...",
+    "uploadButton": "AUGŠUPIELĀDĒT LOGO",
+    "uploadTypes": "PNG, JPG, SVG — MAX 5MB",
+    "submitButton": "NOSŪTĪT PIETEIKUMU",
+    "submitting": "NOSŪTA...",
+    "rulesTitle": "Reglaments",
+    "rulesMinAge": "MINIMĀLAIS VECUMS: 15 GADI",
+    "rulesFormat": "FORMĀTS: 5 VS 5 (+REZERVE)",
+    "rulesMaxPlayers": "MAX SPĒLĒTĀJU SKAITS komandā: 10",
+    "rulesGames": "GARANTĒTS SPĒĻU SKAITS: 4",
+    "rulesLink": "Pilns turnīra reglaments",
+    "limitWarning": "KOMANDU SKAITS IR IEROBEŽOTS. PRIORITĀTE TIEK PIEŠĶIRTA REĢISTRĀCIJAS SECĪBĀ.",
+    "logoError": "Logo fails nedrīkst pārsniegt 5MB",
+    "genericError": "Kaut kas nogāja greizi. Mēģiniet vēlreiz.",
+    "successTitle": "PIETEIKUMS",
+    "successTitleHighlight": "SAŅEMTS",
+    "successP1": "Paldies, ka reģistrējāt savu komandu turnīram Cēzara Kauss.",
+    "successP2": "Mēs esam nosūtījuši e-pastu ar apstiprinājumu un tālāko informāciju (apmaksas detaļas u.c.).",
+    "successP3": "Ja ziņu neredzat, pārbaudiet SPAM/JUNK sadaļu.",
+    "backButton": "ATPAKAĻ UZ SĀKUMU"
+  }
+}

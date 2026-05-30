@@ -5,6 +5,7 @@ import { useState } from "react";
 type YearVideoProps = {
   videoUrl: string;
   videoTitle: string;
+  sectionLabel: string;
 };
 
 function getYouTubeId(url: string): string {
@@ -12,7 +13,7 @@ function getYouTubeId(url: string): string {
   return match ? match[1] : "";
 }
 
-export default function YearVideo({ videoUrl, videoTitle }: YearVideoProps) {
+export default function YearVideo({ videoUrl, videoTitle, sectionLabel }: YearVideoProps) {
   const [playing, setPlaying] = useState(false);
   const videoId = getYouTubeId(videoUrl);
 
@@ -21,7 +22,7 @@ export default function YearVideo({ videoUrl, videoTitle }: YearVideoProps) {
   return (
     <div className="mb-10 md:mb-16">
       <h3 className="text-[10px] md:text-xs text-zinc-500 font-extrabold tracking-[0.3em] uppercase mb-6 md:mb-8 text-center">
-        Video
+        {sectionLabel}
       </h3>
       <div className="relative group max-w-3xl mx-auto">
         <div className="relative aspect-video bg-zinc-900 border border-zinc-800 overflow-hidden">

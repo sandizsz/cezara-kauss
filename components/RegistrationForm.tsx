@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef, FormEvent } from "react";
-import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
+import { Link } from "@/lib/navigation";
 
 interface FormData {
   teamName: string;
@@ -12,6 +13,9 @@ interface FormData {
 }
 
 export default function RegistrationForm() {
+  const t = useTranslations("registration");
+  const locale = useLocale();
+
   const [formData, setFormData] = useState<FormData>({
     teamName: "",
     captainName: "",
@@ -31,7 +35,7 @@ export default function RegistrationForm() {
     if (!file) return;
 
     if (file.size > 5 * 1024 * 1024) {
-      setError("Logo fails nedrīkst pārsniegt 5MB");
+      setError(t("logoError"));
       return;
     }
 
@@ -59,6 +63,7 @@ export default function RegistrationForm() {
       body.append("email", formData.email);
       body.append("phone", formData.phone);
       body.append("comment", formData.comment);
+      body.append("locale", locale);
       if (logoFile) {
         body.append("logo", logoFile);
       }
@@ -70,14 +75,14 @@ export default function RegistrationForm() {
 
       if (!res.ok) {
         const data = await res.json();
-        throw new Error(data.error || "Kaut kas nogāja greizi");
+        throw new Error(data.error || t("genericError"));
       }
 
       setIsSubmitted(true);
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (err) {
       setError(
-        err instanceof Error ? err.message : "Kaut kas nogāja greizi. Mēģiniet vēlreiz."
+        err instanceof Error ? err.message : t("genericError")
       );
     } finally {
       setIsSubmitting(false);
@@ -93,18 +98,18 @@ export default function RegistrationForm() {
           </svg>
         </div>
         <h2 className="text-5xl md:text-8xl font-display font-bold text-black mb-4 md:mb-6 uppercase tracking-normal" style={{ lineHeight: '0.9' }}>
-          PIETEIKUMS <span className="gold-text-gradient">SAŅEMTS</span>
+          {t("successTitle")} <span className="gold-text-gradient">{t("successTitleHighlight")}</span>
         </h2>
         <div className="text-zinc-500 font-bold text-xs md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] mb-8 md:mb-12 px-2 space-y-4">
-          <p>Paldies, ka reģistrējāt savu komandu turnīram Cēzara Kauss.</p>
-          <p>Mēs esam nosūtījuši e-pastu ar apstiprinājumu un tālāko informāciju (apmaksas detaļas u.c.).</p>
-          <p>Ja ziņu neredzat, pārbaudiet SPAM/JUNK sadaļu.</p>
+          <p>{t("successP1")}</p>
+          <p>{t("successP2")}</p>
+          <p>{t("successP3")}</p>
         </div>
         <button
           onClick={() => setIsSubmitted(false)}
           className="px-10 py-5 md:px-16 md:py-6 bg-black text-cesar-gold font-extrabold text-xs uppercase tracking-widest hover:bg-zinc-800 transition-all rounded-sm border-b-4 border-cesar-gold"
         >
-          ATPAKAĻ UZ SĀKUMU
+          {t("backButton")}
         </button>
       </section>
     );
@@ -115,13 +120,13 @@ export default function RegistrationForm() {
       {/* Header row */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-20 gap-4 md:gap-6">
         <div>
-          <span className="section-label mb-3 md:mb-4">DALĪBA</span>
+          <span className="section-label mb-3 md:mb-4">{t("sectionLabel")}</span>
           <h1 className="font-display text-7xl sm:text-8xl md:text-[8rem] uppercase tracking-normal text-black" style={{ lineHeight: '0.9' }}>
-            PIETEIKT <br/><span className="gold-text-gradient">KOMANDU TURNĪRAM</span>
+            {t("title")} <br/><span className="gold-text-gradient">{t("titleHighlight")}</span>
           </h1>
         </div>
         <div className="flex flex-row md:flex-col items-center md:items-end gap-3 md:gap-2 bg-black px-5 py-4 md:p-8 border-b-8 border-cesar-gold">
-          <span className="text-zinc-500 font-extrabold text-[9px] md:text-[10px] uppercase tracking-widest">DALĪBAS MAKSA</span>
+          <span className="text-zinc-500 font-extrabold text-[9px] md:text-[10px] uppercase tracking-widest">{t("feeLabel")}</span>
           <span className="text-3xl md:text-6xl font-display text-cesar-gold leading-none">€150.00</span>
         </div>
       </div>
@@ -134,7 +139,7 @@ export default function RegistrationForm() {
           <form onSubmit={handleSubmit} className="space-y-6 md:space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
               <div className="space-y-2">
-                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KOMANDAS NOSAUKUMS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">{t("teamNameLabel")}</label>
                 <input
                   type="text"
                   required
@@ -145,7 +150,7 @@ export default function RegistrationForm() {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KAPTEIŅA VĀRDS, UZVĀRDS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">{t("captainLabel")}</label>
                 <input
                   type="text"
                   required
@@ -159,7 +164,7 @@ export default function RegistrationForm() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
               <div className="space-y-2">
-                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">TĀLRUNIS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">{t("phoneLabel")}</label>
                 <input
                   type="tel"
                   required
@@ -170,7 +175,7 @@ export default function RegistrationForm() {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">E-PASTS</label>
+                <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">{t("emailLabel")}</label>
                 <input
                   type="email"
                   required
@@ -184,7 +189,7 @@ export default function RegistrationForm() {
 
             {/* Logo upload */}
             <div className="space-y-2">
-              <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KOMANDAS LOGO (NEOBLIGĀTI)</label>
+              <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">{t("logoLabel")}</label>
               <input
                 ref={fileInputRef}
                 type="file"
@@ -221,18 +226,18 @@ export default function RegistrationForm() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                   <span className="text-[10px] md:text-xs text-zinc-400 font-extrabold tracking-widest uppercase">
-                    AUGŠUPIELĀDĒT LOGO
+                    {t("uploadButton")}
                   </span>
-                  <span className="text-[9px] text-zinc-300 font-bold tracking-wider">PNG, JPG, SVG — MAX 5MB</span>
+                  <span className="text-[9px] text-zinc-300 font-bold tracking-wider">{t("uploadTypes")}</span>
                 </button>
               )}
             </div>
 
             {/* Comment */}
             <div className="space-y-2">
-              <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">KOMENTĀRS (NEOBLIGĀTI)</label>
+              <label className="text-sm text-zinc-400 font-extrabold tracking-widest uppercase">{t("commentLabel")}</label>
               <textarea
-                placeholder="PAPILDUS INFORMĀCIJA..."
+                placeholder={t("commentPlaceholder")}
                 value={formData.comment}
                 onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
                 rows={3}
@@ -251,7 +256,7 @@ export default function RegistrationForm() {
               disabled={isSubmitting}
               className="w-full bg-black text-cesar-gold font-display font-bold text-2xl md:text-6xl py-6 md:py-12 hover:bg-zinc-800 transition-all flex items-center justify-center gap-3 md:gap-8 group rounded-sm border-b-8 border-cesar-gold disabled:opacity-50 cursor-pointer"
             >
-              {isSubmitting ? "NOSŪTA..." : "NOSŪTĪT PIETEIKUMU"}
+              {isSubmitting ? t("submitting") : t("submitButton")}
               <svg className="w-6 h-6 md:w-10 md:h-10 group-hover:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
               </svg>
@@ -266,19 +271,19 @@ export default function RegistrationForm() {
               <svg className="w-5 h-5 text-cesar-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
-              <h3 className="font-display text-2xl md:text-4xl uppercase tracking-wider">Reglaments</h3>
+              <h3 className="font-display text-2xl md:text-4xl uppercase tracking-wider">{t("rulesTitle")}</h3>
             </div>
             <ul className="text-zinc-500 text-[10px] md:text-[11px] font-extrabold space-y-3 md:space-y-6 uppercase tracking-widest">
-              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> MINIMĀLAIS VECUMS: 15 GADI</li>
-              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> FORMĀTS: 5 VS 5 (+REZERVE)</li>
-              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> MAX SPĒLĒTĀJU SKAITS komandā: 10</li>
-              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> GARANTĒTS SPĒĻU SKAITS: 4</li>
+              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> {t("rulesMinAge")}</li>
+              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> {t("rulesFormat")}</li>
+              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> {t("rulesMaxPlayers")}</li>
+              <li className="flex items-start gap-3"><span className="w-2.5 h-2.5 bg-cesar-gold mt-0.5 shrink-0"></span> {t("rulesGames")}</li>
             </ul>
             <Link
-              href="/reglaments"
+              href="/rules"
               className="flex items-center justify-center gap-2 w-full bg-black text-cesar-gold font-extrabold text-[10px] md:text-xs px-4 py-3 md:py-4 uppercase tracking-wide md:tracking-[0.2em] hover:bg-zinc-800 transition-all border-b-4 border-cesar-gold"
             >
-              Pilns turnīra reglaments
+              {t("rulesLink")}
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -290,7 +295,7 @@ export default function RegistrationForm() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
             <p className="text-zinc-600 text-[9px] md:text-[10px] font-bold leading-relaxed uppercase tracking-widest italic">
-              KOMANDU SKAITS IR IEROBEŽOTS. PRIORITĀTE TIEK PIEŠĶIRTA REĢISTRĀCIJAS SECĪBĀ.
+              {t("limitWarning")}
             </p>
           </div>
         </div>

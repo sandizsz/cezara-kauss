@@ -21,7 +21,20 @@
       "Bash(lsof:*)",
       "Bash(curl:*)",
       "Bash(python3:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(git commit -m ' *)",
+      "Skill(superpowers:writing-plans)",
+      "Bash(git commit *)",
+      "Skill(superpowers:executing-plans)",
+      "Bash(git checkout *)",
+      "Bash(mkdir -p /Users/macbookpro/Desktop/Projekti/cezara-kauss/app/\\\\[locale\\\\]/tournament-history)",
+      "Bash(mkdir -p /Users/macbookpro/Desktop/Projekti/cezara-kauss/app/\\\\[locale\\\\]/rules)",
+      "Bash(mkdir -p /Users/macbookpro/Desktop/Projekti/cezara-kauss/app/\\\\[locale\\\\]/sign-up)",
+      "Bash(kill 77449)",
+      "Read(//tmp/**)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(xargs kill -9)",
+      "Bash(screencapture -x /tmp/nav_current.png)"
     ]
   }
 }

@@ -1,24 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/lib/navigation";
 
 export default function VideoSection() {
+  const t = useTranslations("video");
   const [playing, setPlaying] = useState(false);
 
   return (
     <section id="video" className="py-16 md:py-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-8 md:mb-16">
-
-          <h2 className="font-display text-7xl sm:text-8xl md:text-[10rem] uppercase tracking-normal text-black" style={{ lineHeight: '0.9' }}>
-           Video <span className="gold-text-gradient">Atskats</span>
+          <h2 className="font-display text-7xl sm:text-8xl md:text-[10rem] uppercase tracking-normal text-black" style={{ lineHeight: "0.9" }}>
+            {t("title")} <span className="gold-text-gradient">{t("titleHighlight")}</span>
           </h2>
           <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed mx-auto">
-           Ja vēlies to piedzīvot pats - <a href="/registret-komandu" className="text-cesar-gold font-bold hover:underline">reģistrē savu komandu</a> un tiekamies jau 25. jūlijā.
+            {t.rich("subtitle", {
+              link: (chunks) => (
+                <Link href="/sign-up" className="text-cesar-gold font-bold hover:underline">
+                  {chunks}
+                </Link>
+              ),
+            })}
           </p>
         </div>
 
-        <div className="relative group max-w-5xl mx-auto ">
+        <div className="relative group max-w-5xl mx-auto">
           <div className="absolute inset-0 border-2 border-cesar-gold/20 -m-2 pointer-events-none hidden md:block"></div>
           <div className="relative aspect-video bg-zinc-900 border-2 md:border-4 border-white overflow-hidden">
             {playing ? (
@@ -30,10 +38,7 @@ export default function VideoSection() {
                 allowFullScreen
               />
             ) : (
-              <button
-                onClick={() => setPlaying(true)}
-                className="w-full h-full relative cursor-pointer"
-              >
+              <button onClick={() => setPlaying(true)} className="w-full h-full relative cursor-pointer">
                 <img
                   src="https://img.youtube.com/vi/wOZpFlpIMco/maxresdefault.jpg"
                   alt="Cēzara Kauss 2025 video atskats thumbnail"
