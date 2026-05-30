@@ -34,7 +34,9 @@
       "Read(//tmp/**)",
       "Bash(pkill -f \"next dev\")",
       "Bash(xargs kill -9)",
-      "Bash(screencapture -x /tmp/nav_current.png)"
+      "Bash(screencapture -x /tmp/nav_current.png)",
+      "Bash(gh pr *)",
+      "Bash(git stash *)"
     ]
   }
 }
