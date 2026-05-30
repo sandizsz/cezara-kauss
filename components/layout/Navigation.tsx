@@ -30,7 +30,7 @@ const LOCALE_META: Record<string, { code: string; name: string }> = {
   en: { code: "EN", name: "English" },
 };
 
-function LanguageDropdown({ onSwitch }: { onSwitch?: () => void }) {
+function LanguageDropdown({ onSwitch, mobile }: { onSwitch?: () => void; mobile?: boolean }) {
   const locale = useLocale() as "lv" | "en";
   const router = useRouter();
   const pathname = usePathname();
@@ -45,48 +45,82 @@ function LanguageDropdown({ onSwitch }: { onSwitch?: () => void }) {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  const other = locale === "lv" ? "en" : "lv";
-
   const handleSwitch = (newLocale: "lv" | "en") => {
     router.replace(pathname, { locale: newLocale });
     setOpen(false);
     onSwitch?.();
   };
 
+  if (mobile) {
+    return (
+      <div className="flex items-center gap-2">
+        {(["lv", "en"] as const).map((loc) => (
+          <button
+            key={loc}
+            onClick={() => handleSwitch(loc)}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-extrabold tracking-widest uppercase transition-all duration-200 border ${
+              loc === locale
+                ? "border-cesar-gold text-black bg-cesar-gold/5"
+                : "border-zinc-200 text-zinc-400 hover:border-zinc-300 hover:text-zinc-600"
+            }`}
+          >
+            {FLAGS[loc]}
+            {LOCALE_META[loc].code}
+          </button>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-2 py-1.5 group"
         aria-label="Switch language"
+        aria-expanded={open}
+        className={`flex items-center gap-2 px-3 py-1.5 rounded-full border transition-all duration-200 group ${
+          open
+            ? "border-cesar-gold bg-cesar-gold/5 shadow-sm"
+            : "border-zinc-200 hover:border-zinc-300 hover:shadow-sm"
+        }`}
       >
-        <span className="flex items-center gap-2 border-b-2 border-transparent group-hover:border-cesar-gold pb-0.5 transition-all">
-          {FLAGS[locale]}
-          <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-400 group-hover:text-black transition-colors">
-            {LOCALE_META[locale].code}
-          </span>
+        {FLAGS[locale]}
+        <span className={`text-[10px] font-extrabold tracking-widest uppercase transition-colors duration-200 ${open ? "text-black" : "text-zinc-500 group-hover:text-zinc-700"}`}>
+          {LOCALE_META[locale].code}
         </span>
         <svg
-          className={`w-2.5 h-2.5 text-zinc-300 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          className={`w-2.5 h-2.5 transition-all duration-200 ${open ? "rotate-180 text-zinc-600" : "text-zinc-300 group-hover:text-zinc-400"}`}
           fill="none" stroke="currentColor" viewBox="0 0 24 24"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
 
-      {open && (
-        <div className="absolute right-0 top-full mt-2 bg-white shadow-md z-50">
+      <div
+        className={`absolute right-0 top-full mt-2 w-40 bg-white border border-zinc-100 shadow-xl shadow-black/5 rounded-sm overflow-hidden z-50 transition-all duration-200 origin-top-right ${
+          open ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-1 pointer-events-none"
+        }`}
+      >
+        {(["lv", "en"] as const).map((loc) => (
           <button
-            onClick={() => handleSwitch(other)}
-            className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-zinc-50 transition-colors"
+            key={loc}
+            onClick={() => handleSwitch(loc)}
+            className={`flex items-center gap-3 w-full px-4 py-3 transition-colors duration-150 ${
+              loc === locale
+                ? "bg-zinc-50/80 cursor-default"
+                : "hover:bg-zinc-50/60"
+            }`}
           >
-            {FLAGS[other]}
-            <span className="text-[11px] font-extrabold tracking-widest uppercase text-zinc-500 hover:text-black">
-              {LOCALE_META[other].code}
+            {FLAGS[loc]}
+            <span className={`text-[11px] font-extrabold tracking-widest uppercase ${loc === locale ? "text-black" : "text-zinc-400 hover:text-zinc-600"}`}>
+              {LOCALE_META[loc].name}
             </span>
+            {loc === locale && (
+              <span className="ml-auto w-1.5 h-1.5 rounded-full bg-cesar-gold shrink-0" />
+            )}
           </button>
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   );
 }
@@ -108,9 +142,10 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-zinc-100 h-14 md:h-16 flex items-center shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between md:justify-normal">
 
-        <Link href="/" className="flex items-center gap-4 group">
+        {/* Left: Logo */}
+        <Link href="/" className="flex items-center gap-4 group flex-shrink-0">
           <div className="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
             <img
               src={LOGO_URL}
@@ -123,12 +158,13 @@ export default function Navigation() {
               CĒZARA KAUSS
             </span>
             <span className="text-[8px] md:text-[10px] text-cesar-gold font-bold uppercase tracking-widest leading-tight mt-0.5">
-              ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS
+              {t("subtitle")}
             </span>
           </div>
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        {/* Center: Nav links */}
+        <div className="hidden md:flex flex-1 items-center justify-center gap-8">
           {navLinks.map((link) =>
             link.type === "anchor" ? (
               <a
@@ -148,7 +184,10 @@ export default function Navigation() {
               </Link>
             )
           )}
+        </div>
 
+        {/* Right: Language + CTA */}
+        <div className="hidden md:flex items-center gap-4 flex-shrink-0">
           <LanguageDropdown />
 
           <div className="h-8 w-px bg-zinc-100"></div>
@@ -202,7 +241,7 @@ export default function Navigation() {
           )}
 
           <div className="pt-2 border-t border-zinc-100">
-            <LanguageDropdown onSwitch={() => setIsOpen(false)} />
+            <LanguageDropdown mobile onSwitch={() => setIsOpen(false)} />
           </div>
 
           <Link

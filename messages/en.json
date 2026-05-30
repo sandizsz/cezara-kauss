@@ -4,15 +4,16 @@
     "about": "About",
     "history": "History",
     "rules": "Rules",
-    "register": "Register your team",
-    "mobileRegister": "REGISTER TEAM"
+    "register": "Join the Tournament",
+    "mobileRegister": "Join THe Tournament",
+    "subtitle": "ARTŪRS DEKSNIS MEMORIAL TOURNAMENT"
   },
   "hero": {
     "tagline": "ARTŪRS DEKSNIS MEMORIAL TOURNAMENT",
-    "subtitle1": "More than a tournament - a true football celebration.",
+    "subtitle1": "More than just a tournament - a true football celebration.",
     "subtitle2": "EMOTIONS. FRIENDS.",
     "subtitleHighlight": "FOOTBALL.",
-    "ctaRegister": "Register your team",
+    "ctaRegister": "Join the Tournament",
     "ctaHistory": "View Tournament Archive",
     "countdownLabel": "Time until registration closes",
     "days": "DAYS",
@@ -121,8 +122,8 @@
   "video": {
     "title": "Video",
     "titleHighlight": "Highlights",
-    "subtitle": "If you want to experience it yourself - register your team and we will see you on July 25.",
-    "subtitleLinkText": "register your team"
+    "subtitle": "If you want to experience it yourself - Join the Tournament and we will see you on July 25.",
+    "subtitleLinkText": "Join the Tournament"
   },
   "location": {
     "sectionLabel": "LOCATION",

@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 const winners = [
   { year: 2025, team: 'Balvu Sporta Centrs', image: '/images/balvi_winners.webp', finalScore: '1 - 0', penalties: '3 - 1', second: 'FC Pārgauja', third: 'IGGI United' },
-  { year: 2024, team: 'Puto/Kārsava', image: 'images/puto_karsava_futbola_turnirs_cezara_kauss_2024_uzvaretaji.webp', finalScore: '2 - 0', second: 'Balvu Juniors', third: 'Balvu Sporta centrs' },
+  { year: 2024, team: 'Puto/Kārsava', image: '/images/puto_karsava_futbola_turnirs_cezara_kauss_2024_uzvaretaji.webp', finalScore: '2 - 0', second: 'Balvu Juniors', third: 'Balvu Sporta centrs' },
 ];
 
 export default function HallOfFame() {
