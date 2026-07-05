@@ -35,9 +35,20 @@ async function appendToSheet(data: {
     timeZone: "Europe/Riga",
   });
 
-  await sheets.spreadsheets.values.append({
+  // The sheet has a manual side-table in later columns (team wishlist, budget
+  // notes) that extends well below the registration rows. values.append would
+  // detect that whole region and write far below the last team, leaving a gap.
+  // Instead, find the next empty row from column A (registration timestamps)
+  // and write there explicitly.
+  const colA = await sheets.spreadsheets.values.get({
     spreadsheetId: SHEET_ID,
-    range: "Sheet1!A:G",
+    range: "Komandas!A:A",
+  });
+  const nextRow = (colA.data.values?.length ?? 0) + 1;
+
+  await sheets.spreadsheets.values.update({
+    spreadsheetId: SHEET_ID,
+    range: `Komandas!A${nextRow}:G${nextRow}`,
     valueInputOption: "USER_ENTERED",
     requestBody: {
       values: [
