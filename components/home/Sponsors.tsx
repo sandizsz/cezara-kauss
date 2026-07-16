@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 
-const sponsors = ["GULBENES NOVADA PAŠVALDĪBA", "SIA NLZ", "GULBENES ALUS", "JC BĀZE", "WINWIN SPORTS", "4MOVE", "LFF ZA", "DHL", "ELITE NORDIC CONSTRUCTIONS", "AKVILE", "WATERLIX", "BOARD GAME ZIBSNIS", "JANA-S", "DIMDIŅI", "4MOVE", "BUMBO.LV", "KURETI CAFE", "O'BYTE", "SKRĪVERU SALDUMI", "PURE", "7DAYS", "GRANINI"];
+const sponsors = ["SIA NLZ", "GULBENES ALUS DARĪTAVA", "KURETI", "JANA-S", "WINWINSPORTS", "DOBELES DZIRNAVNIEKS", "4MOVE", "KOTIŅI", "BUMBO", "SIGULDAS FUTBOLGOLFA PARKS", "GULBENES BOULINGS", "SKRĪVERU SALDUMI", "DIMDIŅI", "G/NINE", "GRANINI/ELMENHORSTER", "AKVILLE", "GRACI MUSLI", "GAĻAS NAMS ĀDAŽI", "LAVERSA CHOCOLATE", "METWORKS"];
 
 export default function Sponsors() {
   const t = useTranslations("sponsors");
