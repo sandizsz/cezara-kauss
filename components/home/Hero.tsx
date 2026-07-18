@@ -9,7 +9,7 @@ export default function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date("2026-07-20T10:00:00").getTime();
+    const targetDate = new Date("2026-07-19T14:00:00").getTime();
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = targetDate - now;
