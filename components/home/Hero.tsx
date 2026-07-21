@@ -1,38 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
 
+const TOURNAMENT_LIVE_URL = "https://tournifyapp.com/live/cezarakauss2026";
+
 export default function Hero() {
   const t = useTranslations("hero");
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-
-  useEffect(() => {
-    const targetDate = new Date("2026-07-19T14:00:00").getTime();
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-      if (distance < 0) {
-        clearInterval(interval);
-        return;
-      }
-      setTimeLeft({
-        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000),
-      });
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const countdownUnits = [
-    { label: t("days"), value: timeLeft.days },
-    { label: t("hours"), value: timeLeft.hours },
-    { label: t("minutes"), value: timeLeft.minutes },
-    { label: t("seconds"), value: timeLeft.seconds },
-  ];
 
   return (
     <div className="relative min-h-screen flex items-center justify-center hero-gradient pt-24 pb-16 md:pt-32 md:pb-20">
@@ -54,15 +28,17 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-3 md:gap-6 justify-center items-center mb-10 md:mb-20">
-            <Link
-              href="/sign-up"
+            <a
+              href={TOURNAMENT_LIVE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full md:w-auto bg-cesar-gold text-black font-extrabold text-xs md:text-sm px-8 md:px-16 py-4 md:py-6 uppercase tracking-[0.2em] hover:bg-white transition-all flex items-center justify-center gap-3 shadow-2xl border-b-4 border-black/20"
             >
               {t("ctaRegister")}
               <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </Link>
+            </a>
             <Link
               href="/tournament-history"
               className="w-full md:w-auto bg-black/50 backdrop-blur-md border-2 border-cesar-gold text-cesar-gold font-extrabold text-xs md:text-sm px-8 md:px-16 py-4 md:py-6 uppercase tracking-[0.2em] hover:bg-cesar-gold hover:text-black transition-all text-center"
@@ -72,20 +48,42 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="animate-reveal" style={{ animationDelay: "0.3s" }}>
-          <p className="text-[10px] md:text-xs text-zinc-400 font-extrabold tracking-[0.2em] uppercase mb-4">
-            {t("countdownLabel")}
-          </p>
-          <div className="max-w-4xl mx-auto grid grid-cols-4 gap-2 md:gap-4">
-            {countdownUnits.map((unit, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-md py-4 md:py-8 px-2 md:px-4 border-b-4 border-cesar-gold relative group">
-                <span className="block font-display text-3xl md:text-6xl text-white transition-transform group-hover:scale-110">
-                  {unit.value.toString().padStart(2, "0")}
-                </span>
-                <span className="text-[8px] md:text-[10px] text-cesar-gold font-extrabold tracking-[0.2em] md:tracking-[0.3em] uppercase">{unit.label}</span>
-              </div>
-            ))}
+        <div className="animate-reveal flex flex-col items-center gap-5 md:gap-7" style={{ animationDelay: "0.3s" }}>
+          <div
+            className="stamp-press"
+            role="img"
+            aria-label={`${t("stampLine1")} ${t("stampLine2")}`}
+          >
+            <svg viewBox="0 0 240 240" className="w-44 h-44 md:w-56 md:h-56 text-cesar-gold" fill="none">
+              <defs>
+                <path id="stamp-arc-top" d="M 38 120 A 82 82 0 0 1 202 120" />
+              </defs>
+
+              <circle cx="120" cy="120" r="112" stroke="currentColor" strokeWidth="2.5" />
+              <circle cx="120" cy="120" r="101" stroke="currentColor" strokeWidth="1" opacity="0.55" />
+
+              <g fill="currentColor">
+                <text className="stamp-arc">
+                  <textPath href="#stamp-arc-top" startOffset="50%" textAnchor="middle">
+                    {t("stampTop")}
+                  </textPath>
+                </text>
+                <text x="30" y="126" textAnchor="middle" fontSize="15">★</text>
+                <text x="210" y="126" textAnchor="middle" fontSize="15">★</text>
+
+                <text x="120" y="108" textAnchor="middle" className="stamp-word" fontSize="26">
+                  {t("stampLine1")}
+                </text>
+                <text x="120" y="158" textAnchor="middle" className="stamp-word" fontSize="44">
+                  {t("stampLine2")}
+                </text>
+              </g>
+            </svg>
           </div>
+
+          <p className="max-w-sm text-zinc-400 text-sm md:text-base font-medium text-center leading-relaxed">
+            {t("registrationClosedText")}
+          </p>
         </div>
       </div>
     </div>

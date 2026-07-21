@@ -1,73 +1,30 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 const sponsors = ["SIA NLZ", "GULBENES ALUS DARĪTAVA", "KURETI", "JANA-S", "WINWINSPORTS", "DOBELES DZIRNAVNIEKS", "4MOVE", "KOTIŅI", "BUMBO", "SIGULDAS FUTBOLGOLFA PARKS", "GULBENES BOULINGS", "SKRĪVERU SALDUMI", "DIMDIŅI", "G/NINE", "GRANINI/ELMENHORSTER", "AKVILLE", "GRACI MUSLI", "GAĻAS NAMS ĀDAŽI", "LAVERSA CHOCOLATE", "METWORKS"];
 
-export default function Sponsors() {
-  const t = useTranslations("sponsors");
-  const containerRef = useRef<HTMLDivElement>(null);
-  const scrollPosRef = useRef(0);
-  const lastTimeRef = useRef(0);
+const half = Math.ceil(sponsors.length / 2);
+const rowOne = sponsors.slice(0, half);
+const rowTwo = sponsors.slice(half);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+function MarqueeRow({ names, direction }: { names: string[]; direction: "rtl" | "ltr" }) {
+  return (
+    <div className="marquee-row">
+      <div className={`marquee-track ${direction === "rtl" ? "marquee-rtl" : "marquee-ltr"}`}>
+        {[...names, ...names].map((name, idx) => (
+          <span
+            key={idx}
+            className="font-display text-4xl md:text-6xl text-zinc-200 uppercase tracking-tighter whitespace-nowrap mr-16 md:mr-32 inline-block transition-all duration-300 hover:text-cesar-gold hover:scale-110 cursor-default"
+          >
+            {name}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
 
-    const getSetWidth = () => {
-      const firstSet = container.children[0] as HTMLElement;
-      if (!firstSet) return 0;
-      return firstSet.offsetWidth;
-    };
-
-    const animate = (timestamp: number) => {
-      if (!lastTimeRef.current) lastTimeRef.current = timestamp;
-      const delta = timestamp - lastTimeRef.current;
-      lastTimeRef.current = timestamp;
-
-      const speed = 0.05;
-      scrollPosRef.current += delta * speed;
-
-      const setWidth = getSetWidth();
-      if (setWidth > 0 && scrollPosRef.current >= setWidth) {
-        scrollPosRef.current = scrollPosRef.current - setWidth;
-      }
-
-      container.style.transform = `translateX(-${scrollPosRef.current}px)`;
-
-      const spans = container.querySelectorAll<HTMLSpanElement>('[data-sponsor]');
-      const viewportCenter = window.innerWidth / 2;
-
-      let closestSpan: HTMLSpanElement | null = null;
-      let closestDistance = Infinity;
-
-      spans.forEach((span) => {
-        const rect = span.getBoundingClientRect();
-        const spanCenter = rect.left + rect.width / 2;
-        const distance = Math.abs(viewportCenter - spanCenter);
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          closestSpan = span;
-        }
-      });
-
-      spans.forEach((span) => {
-        if (span === closestSpan) {
-          span.style.color = '#D4AF37';
-          span.style.transform = 'scale(1.1)';
-        } else {
-          span.style.color = '';
-          span.style.transform = '';
-        }
-      });
-
-      requestAnimationFrame(animate);
-    };
-
-    const animationId = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationId);
-  }, []);
+export default async function Sponsors() {
+  const t = await getTranslations("sponsors");
 
   return (
     <section id="atbalstitaji" className="py-16 md:py-24 bg-white border-y border-zinc-100 overflow-hidden relative">
@@ -83,20 +40,9 @@ export default function Sponsors() {
         </div>
       </div>
 
-      <div ref={containerRef} className="flex whitespace-nowrap will-change-transform">
-        {Array(3).fill(0).map((_, i) => (
-          <div key={i} className="flex gap-16 md:gap-32 items-center pr-16 md:pr-32 shrink-0">
-            {sponsors.map((name, idx) => (
-              <span
-                key={`${i}-${idx}`}
-                data-sponsor
-                className="font-display text-4xl md:text-6xl text-zinc-200 uppercase tracking-tighter transition-all duration-300 cursor-default"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
-        ))}
+      <div className="flex flex-col gap-6 md:gap-10">
+        <MarqueeRow names={rowOne} direction="rtl" />
+        <MarqueeRow names={rowTwo} direction="ltr" />
       </div>
     </section>
   );

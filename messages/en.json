@@ -4,8 +4,8 @@
     "about": "About",
     "history": "History",
     "rules": "Rules",
-    "register": "Join the Tournament",
-    "mobileRegister": "Join THe Tournament",
+    "register": "Cēzara Kauss 2026",
+    "mobileRegister": "CĒZARA KAUSS 2026",
     "subtitle": "ARTŪRS DEKSNIS MEMORIAL TOURNAMENT"
   },
   "hero": {
@@ -13,13 +13,12 @@
     "subtitle1": "More than just a tournament - a true football celebration.",
     "subtitle2": "EMOTIONS. FRIENDS.",
     "subtitleHighlight": "FOOTBALL.",
-    "ctaRegister": "Join the Tournament",
+    "ctaRegister": "Cēzara Kauss 2026",
     "ctaHistory": "View Tournament Archive",
-    "countdownLabel": "Time until registration closes",
-    "days": "DAYS",
-    "hours": "HOURS",
-    "minutes": "MINUTES",
-    "seconds": "SECONDS"
+    "stampTop": "Cēzara Kauss · 2026",
+    "stampLine1": "Registration",
+    "stampLine2": "Closed",
+    "registrationClosedText": "See you at Gulbene Stadium on July 25."
   },
   "about": {
     "sectionLabel": "About the tournament",
@@ -102,7 +101,7 @@
       "pr": "Public Relations",
       "marketing": "Marketing & IT",
       "dj": "DJ / Atmosphere",
-      "referee": "Head Referee"
+      "spokesperson": "Master of Ceremonies"
     }
   },
   "timeline": {
@@ -122,8 +121,7 @@
   "video": {
     "title": "Video",
     "titleHighlight": "Highlights",
-    "subtitle": "If you want to experience it yourself - Join the Tournament and we will see you on July 25.",
-    "subtitleLinkText": "Join the Tournament"
+    "subtitle": "Registration for the 2026 tournament has closed, but you can <link>follow the games live online</link> — see you on July 25!"
   },
   "location": {
     "sectionLabel": "LOCATION",
@@ -145,7 +143,7 @@
     "navAbout": "About",
     "navHistory": "History",
     "navRules": "Rules",
-    "navRegister": "Register",
+    "navRegister": "Cēzara Kauss 2026",
     "followTitle": "Follow Us"
   },
   "history": {
@@ -235,7 +233,7 @@
         "items": [
           "6.1 Teams compete in a two-phase tournament (group stage + playoff stage).",
           "6.2 Teams will be divided into groups. The top 2 teams from each group advance to the playoff stage.",
-          "6.3 Team standings are determined by points (win – 3 pts, draw – 1 pt, loss – 0 pts).",
+          "6.3 In the group stage, team standings are determined in the following order of priority: 1) total points (win – 3 pts, draw – 1 pt, loss – 0 pts); 2) goals scored; 3) goal difference; 4) head-to-head result.",
           "6.4 In the playoff stage, draws are decided by penalty shoot-outs - 5 kicks per team.",
           "6.5 Match duration: 2 × 10 minutes.",
           "6.6 Players on the pitch: 5 (including goalkeeper), format is 5v5;",

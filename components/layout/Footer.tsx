@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
 
 const LOGO_URL = "/images/2026cezara_logo.svg";
+const TOURNAMENT_LIVE_URL = "https://tournifyapp.com/live/cezarakauss2026";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -33,7 +34,7 @@ export default function Footer() {
             <a href="/#par-turniru" className="hover:text-cesar-gold transition-colors text-left">{t("navAbout")}</a>
             <Link href="/tournament-history" className="hover:text-cesar-gold transition-colors text-left">{t("navHistory")}</Link>
             <Link href="/rules" className="hover:text-cesar-gold transition-colors text-left">{t("navRules")}</Link>
-            <Link href="/sign-up" className="hover:text-cesar-gold transition-colors text-left">{t("navRegister")}</Link>
+            <a href={TOURNAMENT_LIVE_URL} target="_blank" rel="noopener noreferrer" className="hover:text-cesar-gold transition-colors text-left">{t("navRegister")}</a>
           </div>
         </div>
 

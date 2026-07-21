@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/lib/navigation";
+
+const TOURNAMENT_LIVE_URL = "https://tournifyapp.com/live/cezarakauss2026";
 
 export default function VideoSection() {
   const t = useTranslations("video");
@@ -18,9 +19,9 @@ export default function VideoSection() {
           <p className="mt-4 md:mt-8 text-zinc-500 font-medium leading-relaxed mx-auto">
             {t.rich("subtitle", {
               link: (chunks) => (
-                <Link href="/sign-up" className="text-cesar-gold font-bold hover:underline">
+                <a href={TOURNAMENT_LIVE_URL} target="_blank" rel="noopener noreferrer" className="text-cesar-gold font-bold hover:underline">
                   {chunks}
-                </Link>
+                </a>
               ),
             })}
           </p>

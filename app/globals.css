@@ -118,6 +118,57 @@ html {
 }
 
 
+/* Registration-closed entry stamp */
+.stamp-press {
+  opacity: 1;
+  transform: rotate(-7deg);
+  transform-origin: center;
+}
+.stamp-arc {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.stamp-word {
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Sponsor marquee — two rows scrolling in opposite directions */
+.marquee-row {
+  overflow: hidden;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+@keyframes marquee-rtl {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-ltr {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.marquee-rtl {
+  animation: marquee-rtl 55s linear infinite;
+}
+.marquee-ltr {
+  animation: marquee-ltr 55s linear infinite;
+}
+.marquee-row:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-rtl,
+  .marquee-ltr {
+    animation: none;
+  }
+}
+
 /* Display font styling */
 .font-display {
   font-family: var(--font-display);

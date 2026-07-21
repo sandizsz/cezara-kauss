@@ -7,7 +7,7 @@ const teamMembers = [
   { name: "Arita Klesmane", roleKey: "pr", image: "/images/team/aritav2.webp" },
   { name: "Sandis Sirmais", roleKey: "marketing", image: "/images/team/sandis.webp" },
   { name: "Jānis Stībelis", roleKey: "dj", image: "/images/team/JanisStibelis.webp" },
-  { name: "Artēmijs Semjonovs", roleKey: "referee", image: "/images/team/sems.webp" },
+  { name: "Artēmijs Semjonovs", roleKey: "spokesperson", image: "/images/team/sems.webp" },
 ];
 
 export default async function TeamSection() {

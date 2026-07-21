@@ -4,8 +4,8 @@
     "about": "Par turnīru",
     "history": "Vēsture",
     "rules": "Reglaments",
-    "register": "Reģistrēt komandu",
-    "mobileRegister": "REĢISTRĒT KOMANDU",
+    "register": "Cēzara Kauss 2026",
+    "mobileRegister": "CĒZARA KAUSS 2026",
     "subtitle": "ARTŪRA DEKŠŅA PIEMIŅAS TURNĪRS"
   },
   "hero": {
@@ -13,13 +13,12 @@
     "subtitle1": "Vairāk nekā turnīrs - īsti futbola svētki.",
     "subtitle2": "EMOCIJAS. DRAUGI.",
     "subtitleHighlight": "FUTBOLS.",
-    "ctaRegister": "Reģistrēt komandu",
+    "ctaRegister": "Cēzara Kauss 2026",
     "ctaHistory": "Skatīt Turnīra arhīvu",
-    "countdownLabel": "Līdz reģistrācijas beigām atlicis",
-    "days": "DIENAS",
-    "hours": "STUNDAS",
-    "minutes": "MINŪTES",
-    "seconds": "SEKUNDES"
+    "stampTop": "Cēzara Kauss · 2026",
+    "stampLine1": "Reģistrācija",
+    "stampLine2": "Slēgta",
+    "registrationClosedText": "Tiekamies Gulbenes stadionā 25. jūlijā."
   },
   "about": {
     "sectionLabel": "Par futbola turnīru",
@@ -102,7 +101,7 @@
       "pr": "Sabiedriskās attiecības",
       "marketing": "Mārketings & IT",
       "dj": "DJ / Atmosfēra",
-      "referee": "Galvenais tiesnesis"
+      "spokesperson": "Galvenais runasvīrs"
     }
   },
   "timeline": {
@@ -122,8 +121,7 @@
   "video": {
     "title": "Video",
     "titleHighlight": "Atskats",
-    "subtitle": "Ja vēlies to piedzīvot pats — reģistrē savu komandu un tiekamies jau 25. jūlijā.",
-    "subtitleLinkText": "reģistrē savu komandu"
+    "subtitle": "Reģistrācija uz 2026. gada turnīru ir noslēgusies, bet spēļu norisei vari <link>sekot līdzi tiešsaistē</link> — tiekamies jau 25. jūlijā."
   },
   "location": {
     "sectionLabel": "LOKĀCIJA",
@@ -145,7 +143,7 @@
     "navAbout": "Par turnīru",
     "navHistory": "Vēsture",
     "navRules": "Reglaments",
-    "navRegister": "Reģistrācija",
+    "navRegister": "Cēzara Kauss 2026",
     "followTitle": "Seko Mums"
   },
   "history": {
@@ -235,12 +233,12 @@
         "items": [
           "6.1 Komandas spēlē divu fāžu turnīru (grupu fāze + playoff fāze).",
           "6.2 Komandas tiks dalītas grupās atbilstoši reģistrēto komandu skaitam. 2 labākās no katras apakšgrupas kvalificējas playoff fāzei.",
-          "6.3 Komandu vietas nosaka pēc iegūto punktu summas (uzvara – 3 p., neizšķirts – 1 p., zaudējums – 0 p.).",
+          "6.3 Komandu vietas grupu turnīrā nosaka šādā prioritārā secībā: 1) iegūto punktu summa (uzvara – 3 p., neizšķirts – 1 p., zaudējums – 0 p.); 2) gūtie vārti; 3) vārtu starpība; 4) savstarpējās spēles rezultāts.",
           "6.4 Playoff turnīra fāzē pie neizšķirta rezultāta seko 6m soda sitieni – 5 katrai komandai.",
           "6.5 Spēles laiks 2 x 10 min.",
           "6.6 Spēlētāji laukumā: 5 (ieskaitot vārtsargu), spēle norit formātā 5 pret 5;",
           "6.7 Vārtu izmēri: 3m x 2m;",
-          "6.8 Turnīra rezultātus var sekot vietnē tournify.com.",
+          "6.8 Turnīra rezultātiem var sekot līdzi vietnē tournify.com.",
           "6.9 Pēc katras spēles rezultāts tiks publicēts turnīra rezultātu vietnē.",
           "6.10 Turnīra organizatoriem ir tiesības veikt izmaiņas spēļu norises laikos un vietās.",
           "6.11 Ja komanda neierodas uz spēli 10 minūšu laikā pēc plānotā sākuma, tai tiek piešķirts tehniskais zaudējums 0:3."

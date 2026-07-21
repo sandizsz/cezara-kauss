@@ -6,6 +6,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter, usePathname } from "@/lib/navigation";
 
 const LOGO_URL = "/images/2026cezara_logo.svg";
+const TOURNAMENT_LIVE_URL = "https://tournifyapp.com/live/cezarakauss2026";
 
 const FLAGS: Record<string, ReactElement> = {
   lv: (
@@ -191,8 +192,10 @@ export default function Navigation() {
           <LanguageDropdown />
 
           <div className="h-8 w-px bg-zinc-100"></div>
-          <Link
-            href="/sign-up"
+          <a
+            href={TOURNAMENT_LIVE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2.5 bg-black text-cesar-gold font-extrabold text-[11px] px-8 py-3 uppercase hover:bg-zinc-800 transition-all tracking-widest rounded-sm border-b-2 border-cesar-gold shadow-lg"
           >
             <span className="relative flex h-2.5 w-2.5 shrink-0">
@@ -200,7 +203,7 @@ export default function Navigation() {
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
             </span>
             {t("register")}
-          </Link>
+          </a>
         </div>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-black">
@@ -244,8 +247,10 @@ export default function Navigation() {
             <LanguageDropdown mobile onSwitch={() => setIsOpen(false)} />
           </div>
 
-          <Link
-            href="/sign-up"
+          <a
+            href={TOURNAMENT_LIVE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
             className="flex items-center justify-center gap-3 w-full py-5 bg-black text-cesar-gold font-display text-3xl uppercase rounded-sm border-b-4 border-cesar-gold"
           >
@@ -254,7 +259,7 @@ export default function Navigation() {
               <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
             </span>
             {t("mobileRegister")}
-          </Link>
+          </a>
         </div>
       )}
     </nav>
